@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>2회차 예고 · 마진, 자금, 시간, 그리고 이유</title>
+<title>2회차 컨설팅 · 예고편 · 박태경 대표</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{--ink:#1d1d1f;--gray:#6e6e73;--card:#f5f5f7;--line:#d2d2d7;--blue:#0071e3;--bg:#fff;--soft:#e8f0fe}
@@ -18,6 +18,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",-
 .tag{font-size:11px;letter-spacing:.28em;color:#86868b;text-transform:uppercase}
 .hero h1{font-size:clamp(30px,8vw,42px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin:22px 0 14px}
 .hero h1 span{color:#0a84ff}
+.hero .sub{font-size:clamp(17px,4.6vw,21px);font-weight:500;color:#fff;margin:-4px 0 14px;letter-spacing:-.01em}
 .hero p{color:#a1a1a6;font-weight:300;font-size:16px;margin:0}
 .when{display:inline-flex;align-items:center;gap:9px;margin-top:28px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:9px 15px;font-size:13px;color:#fff}
 .when b{font-weight:600}.when .dot{width:7px;height:7px;border-radius:50%;background:#0a84ff;box-shadow:0 0 0 4px rgba(10,132,255,.25)}
@@ -57,9 +58,10 @@ footer{border-top:1px solid var(--line);padding:24px 22px 44px;font-size:12px;co
 <body>
 <div class="hero"><div class="orb"></div><div class="wrap">
   <div class="tag">OneCrew · Session 02 · Preview</div>
-  <h1>마진, 자금, 시간,<br>그리고 <span>이유</span>.</h1>
+  <h1>2회차 <span>컨설팅</span></h1>
+  <div class="sub">마진, 자금, 시간, 그리고 이유</div>
   <p>오늘 세션은 다섯 개의 레슨입니다. 전부 대표님이 100문100답에 쓴 답에서 시작합니다. 어떤 이야기가 나올지 미리 한 번 훑어보십시오.</p>
-  <div class="when"><span class="dot"></span><span>오늘 <b>오후 3시</b> · 2시간 · <b id="cd"></b></span></div>
+  <div class="when"><span class="dot"></span><span>9월 15일(화) <b>오후 3시</b> · 2시간 · <b id="cd"></b></span></div>
 </div></div>
 
 <main><div class="wrap">
@@ -140,7 +142,20 @@ footer{border-top:1px solid var(--line);padding:24px 22px 44px;font-size:12px;co
 </div></main>
 <footer>박태경 대표 1인을 위한 비공개 세션 예고 자료입니다.</footer>
 <script>
-(function(){try{var el=document.getElementById('cd');var now=new Date();var t=new Date(now.getFullYear(),now.getMonth(),now.getDate(),15,0,0);function tick(){var d=t-new Date();if(d<=0){el.textContent='진행 중';return;}var h=Math.floor(d/3600000),m=Math.floor(d%3600000/60000);el.textContent=(h>0?h+'시간 ':'')+m+'분 남음';}tick();setInterval(tick,30000);}catch(e){}})();
+(function(){
+  var el=document.getElementById('cd');
+  var t=new Date('2026-09-15T15:00:00+09:00');   // 세션 시작 (KST)
+  var end=new Date(t.getTime()+2*3600*1000);
+  function pad(n){return (n<10?'0':'')+n;}
+  function tick(){
+    var now=new Date(), d=t-now;
+    if(now>=end){el.textContent='종료';return;}
+    if(d<=0){el.textContent='진행 중';return;}
+    var days=Math.floor(d/86400000), h=Math.floor(d%86400000/3600000), m=Math.floor(d%3600000/60000), sec=Math.floor(d%60000/1000);
+    el.textContent=(days>0?days+'일 ':'')+pad(h)+':'+pad(m)+':'+pad(sec)+' 남음';
+  }
+  tick(); setInterval(tick,1000);
+})();
 </script>
 </body>
 </html>
