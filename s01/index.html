@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>1회차 정리 · 박태경 대표 · 원크루</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d1d1f;--gray:#6e6e73;--light:#f5f5f7;--line:#d2d2d7;--blue:#0071e3;--bg:#fff;--card:#f5f5f7;--codebg:#000;}
+:root:not([data-theme="light"]){}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ink:#f5f5f7;--gray:#a1a1a6;--light:#1c1c1e;--line:#3a3a3c;--blue:#0a84ff;--bg:#000;--card:#1c1c1e;--codebg:#1c1c1e;}}
+:root[data-theme="dark"]{--ink:#f5f5f7;--gray:#a1a1a6;--light:#1c1c1e;--line:#3a3a3c;--blue:#0a84ff;--bg:#000;--card:#1c1c1e;--codebg:#1c1c1e;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif;font-size:17px;line-height:1.8;word-break:keep-all;-webkit-font-smoothing:antialiased}
+.hero{background:#000;color:#fff;padding:96px 24px 72px;position:relative;overflow:hidden}
+.hero .orb{position:absolute;right:-160px;top:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#2c5cff 0%,#0a84ff 25%,rgba(10,132,255,0) 65%);opacity:.55}
+.wrap{max-width:720px;margin:0 auto;position:relative}
+.tag{font-size:12px;letter-spacing:.28em;color:#86868b;text-transform:uppercase}
+.hero h1{font-size:clamp(34px,6vw,52px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin:28px 0 16px}
+.hero h1 span{color:#0a84ff}
+.hero p{color:#a1a1a6;font-weight:300;font-size:18px;max-width:520px;margin:0}
+.hero .meta{margin-top:40px;font-size:13px;color:#86868b;line-height:1.9}
+.hero .meta b{color:#fff;font-weight:500}
+main{padding:56px 24px 96px}
+section{margin-bottom:72px}
+.kicker{font-size:12px;letter-spacing:.25em;color:var(--blue);text-transform:uppercase;font-weight:500;margin-bottom:8px}
+h2{font-size:clamp(26px,4vw,34px);font-weight:700;letter-spacing:-.02em;line-height:1.2;margin:0 0 8px}
+.lead{font-size:19px;font-weight:300;color:var(--gray);margin:0 0 28px}
+h3{font-size:20px;font-weight:600;margin:36px 0 10px;letter-spacing:-.01em}
+p{margin:0 0 14px}
+ul{padding-left:20px;margin:0 0 16px}li{margin-bottom:6px}
+b{font-weight:600}
+.card{background:var(--card);border-radius:18px;padding:22px 24px;margin:18px 0}
+.card h4{margin:0 0 8px;font-size:16px;font-weight:600}
+.card.dark{background:#000;color:#fff}.card.dark .k{color:#0a84ff;font-size:12px;letter-spacing:.2em;margin-bottom:8px}
+:root[data-theme="dark"] .card.dark, :root:not([data-theme="light"]) .card.dark{background:#1c1c1e}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .card.dark{background:#000}}
+.pull{font-size:clamp(22px,3.4vw,28px);font-weight:600;letter-spacing:-.015em;line-height:1.4;margin:36px 0}
+.pull span{color:var(--blue)}
+.quote{border-left:2px solid var(--blue);padding:4px 0 4px 18px;margin:18px 0;color:var(--ink);font-weight:300;font-size:17px}
+.quote .src{display:block;font-size:13px;color:var(--gray);margin-top:6px}
+.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:22px 0}
+.stat div{background:var(--card);border-radius:14px;padding:18px}
+.stat .n{font-size:30px;font-weight:700;letter-spacing:-.03em;line-height:1}
+.stat .l{font-size:13px;color:var(--gray);margin-top:8px}
+.tbl{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:15px;margin:12px 0 20px}
+th{text-align:left;font-weight:600;padding:10px 8px;border-bottom:1.5px solid var(--ink);font-size:14px}
+td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.tl{position:relative;padding-left:36px;margin:22px 0}
+.tl:before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:1px;background:var(--line)}
+.step{position:relative;margin-bottom:24px}
+.step:before{content:"";position:absolute;left:-33px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--blue)}
+.step h4{margin:0 0 4px;font-size:16px;font-weight:600}
+.check li{list-style:none;position:relative;padding-left:30px}
+.check li:before{content:"";position:absolute;left:0;top:7px;width:15px;height:15px;border:1.5px solid var(--ink);border-radius:4px}
+.rest{background:linear-gradient(160deg,var(--light),transparent);border-radius:24px;padding:64px 24px;text-align:center;margin:56px 0}
+.rest .label{font-size:12px;letter-spacing:.3em;color:var(--gray);text-transform:uppercase;margin-bottom:24px}
+.rest .q{font-size:clamp(22px,3.6vw,30px);font-weight:600;line-height:1.45;letter-spacing:-.015em}
+.rest .who{margin-top:18px;font-size:14px;color:var(--gray)}
+footer{border-top:1px solid var(--line);padding:32px 24px 56px;font-size:13px;color:var(--gray);text-align:center}
+.sig{margin-top:48px}.sig b{display:block;font-size:19px;color:var(--ink)}
+</style>
+</head>
+<body>
+
+<div class="hero"><div class="orb"></div><div class="wrap">
+  <div class="tag">OneCrew · Session Note · 01</div>
+  <h1>돈은 쓰기 위해<br>버는 <span>것입니다.</span></h1>
+  <p>1회차 세션에서 나눈 이야기를 한 페이지로 정리했습니다. 다시 읽을 때마다 조금씩 다르게 읽히면, 그만큼 대표님이 움직인 것입니다.</p>
+  <div class="meta"><b>박태경 대표</b> 귀하 · 2026년 9월 10일 세션<br>정리 · 멘토루크 유믿음</div>
+</div></div>
+
+<main><div class="wrap">
+
+<section>
+  <div class="kicker">Part A</div>
+  <h2>돈 · 시간 · 목적</h2>
+  <p class="lead">첫 시간의 절반은 사업 이야기가 아니라 돈 이야기였습니다. 이유가 있습니다. 왜 버는지가 흐리면, 어느 지점에서 반드시 멈춥니다.</p>
+
+  <h3>1. 돈은 쓰기 위해 버는 것</h3>
+  <p>대표님은 돈을 <b>"사람 노릇 할 수 있는 수단"</b>이라고 정의하셨습니다. 좋은 정의입니다. 다만 하나가 비어 있었습니다. 가족과 주변을 위한 쓰임은 분명한데, <b>돈이 남았을 때 대표님 자신을 위해 어떻게 쓰겠다는 그림</b>이 아직 없습니다. 이것은 결점이 아니라, 앞으로 함께 채울 빈칸입니다.</p>
+
+  <h3>2. 매슬로의 다섯 계단</h3>
+  <div class="tbl"><table>
+    <tr><th>단계</th><th>욕구</th><th>돈이 향하는 곳</th></tr>
+    <tr><td>1</td><td>생리</td><td>먹고 자는 것. 생존</td></tr>
+    <tr><td>2</td><td>안전</td><td>더 좋은 음식, 더 안전한 집, 더 좋은 옷</td></tr>
+    <tr><td>3</td><td>애정</td><td>사람을 만날 여유. 돈이 없으면 만남 자체가 부담</td></tr>
+    <tr><td>4</td><td>존경</td><td>인정받고 싶은 마음. 명예</td></tr>
+    <tr><td>5</td><td>자아실현</td><td>"나는 무엇을 위해 사는가"를 물을 수 있는 자리</td></tr>
+  </table></div>
+  <p>"돈을 조금 더 벌면 먹고 싶었던 걸 사 먹겠다"는 답은 정확히 2단계입니다. 정답입니다. 지금 배우는 모든 것은 1·2단계를 위한 수단이고, 그것이 채워지면 <b>돈으로 만족되지 않는 단계</b>가 옵니다. 박진영 씨는 그 지점을 "돈의 행복은 33%"라고 표현했습니다. 나머지를 채운 것은 명예(자기 곡의 미국 차트 진입)였습니다.</p>
+
+  <div class="card dark"><div class="k">THE 1억 QUESTION</div><p style="margin:0">"아무 때나 써도 되는 1억이 있다면?" — 이 질문은 대표님이 지금 어느 계단에 서 있는지, 그리고 돈을 벌어 <b>무엇을 실현하고 싶은지</b>를 묻는 질문입니다. 답이 어느 정도 찾아지는 순간, 사업에 불이 붙습니다. 앞으로 여러 번 다시 물을 것입니다.</p></div>
+
+  <h3>3. 시간에 값을 매기기</h3>
+  <div class="stat">
+    <div><div class="n">1,000만</div><div class="l">월 목표</div></div>
+    <div><div class="n">33.3만</div><div class="l">하루 (÷30)</div></div>
+    <div><div class="n">14,000원</div><div class="l">시간당 (÷24)</div></div>
+  </div>
+  <p>자는 시간에도 시간당 14,000원이 나와야 월 1,000이 됩니다. 생각보다 크지 않은 숫자입니다. 단, 전제가 있습니다 — <b>자면서도 돈이 나오는 구조</b>가 있어야 합니다. 그 구조를 만드는 것이 이 컨설팅입니다.</p>
+  <p>적용은 단순합니다. 어떤 모임, 어떤 만남이 3시간에 5만 원어치 가치를 주지 않는다면, 두 달 뒤로 미루거나 정중히 멀리합니다. 냉정한 것이 아니라 <b>계산하는 것</b>입니다.</p>
+
+  <h3>4. 손절선은 시작할 때 정한다</h3>
+  <div class="quote">"세 달 안에 이 정도 수익도 못 낸다면 저는 이 브랜드를 손절할 것 같습니다."<span class="src">화장품 브랜드 공급 계약을 앞둔 한 대표님의 결론</span></div>
+  <p>손절선이 없으면 이미 넣은 시간이 아까워서 <b>내가 선택한 것에 물타기</b>를 하게 됩니다. 시작점에서 최악을 계산하고 들어가야 시간 관리, 인맥 관리, 아이템 선정이 명확해집니다. "열심히 하면 되겠지"는 계획이 아닙니다. 역마진이 나면 발송하지 않는 규칙도 같은 원리의 작은 손절선입니다.</p>
+
+  <h3>5. 돈이 개입되면 규칙이 필요하다</h3>
+  <p>대표님이 직접 말씀하신 교훈입니다. "좋은 게 좋다"로 계약서와 절차 없이 진행한 것이 가장 큰 후회였다고. 잘 되면 해피엔딩이지만, 문제는 안 됐을 때부터 시작됩니다. <b>책임 소재와 관리 방안은 미리 정합니다.</b> 이 사업에서도 마찬가지입니다 — 그래서 다음 세션에서 '결정의 규칙표'를 함께 만듭니다.</p>
+
+  <h3>6. 뇌는 집중한 것만 본다 (RAS)</h3>
+  <p>"일주일 동안 빨간 차를 볼 때마다 메모하라"고 하면 빨간 차가 갑자기 많이 보입니다. 뇌의 망상활성계는 집중한 것을 필터링해서 보여줍니다. "나는 될 거야"를 반복하면 그 방향의 자료와 아이디어가 모이고, "안 될 거야"를 반복하면 그 방향의 증거만 모입니다. 자기암시는 정신론이 아니라 <b>필터 설정</b>입니다.</p>
+  <p>성실한 사람일수록 이 필터가 굳어 있습니다. 그래서 주말에 1~2만 원으로 <b>안 가본 카페, 안 먹어본 음식</b>을 시도해 보라고 권합니다. 뇌를 다른 쪽으로 깨우는 가장 싼 방법입니다.</p>
+
+  <h3>7. 절제와 보상</h3>
+  <div class="pull">절제하는 타이밍이 있어야 보상이 크고,<br>보상이 커야 <span>절제를 참을 수 있습니다.</span></div>
+  <p>대표님은 소비에 늘 합당한 이유를 붙이십니다(아이맥은 프로그램 안정성 때문에). 아버님의 "10원 한 장" 가르침이 남긴 좋은 습관이지만, 사장에게는 <b>이유 없는 소비를 허락하는 것</b>도 필요합니다. 남이 보기에 값어치가 있든 없든, 대표님이 즐거우면 됩니다.</p>
+  <div class="card"><h4>합의된 보상</h4><p style="margin:0">월 순수익 <b>500만 원</b> 도달 시, 번 돈에서 마이너스가 되지 않는 선에서 상당 부분을 써서 여행을 갑니다. 국내든 해외든, 1박이든 3박이든. 그리고 언젠가는 비즈니스석으로 유럽·호주·북유럽. 뒷일은 생각하지 마십시오. 그것이 이 보상의 규칙입니다.</p></div>
+</section>
+
+<div class="rest"><div class="label">Pause</div><div class="q">마음의 그릇이 작으면 우물에 돌 하나에도 물이 튀지만,<br>한강에는 바위를 던져도 물이 튀지 않습니다.</div><div class="who">— 1회차 세션 중</div></div>
+
+<section>
+  <div class="kicker">Part B</div>
+  <h2>사장의 그릇</h2>
+  <p class="lead">신고와 클레임이 같은 주에 왔습니다. 사장이 되면 이런 일은 그냥 일어납니다. 잘했든 못했든.</p>
+
+  <h3>경찰서와 내용증명은 '사건'이 아니라 '일상'</h3>
+  <p>경쟁사는 함정 구매로 배송 출발지를 확인하고 신고합니다. 소비자는 말도 안 되는 이유로 신고합니다. 내용증명, 민원, 항의 전화는 괴롭혀서 떠나게 하려는 것입니다. 대표님이 하고 계신 모든 것은 <b>법적으로 문제가 없습니다.</b> 재고 덤핑을 되판 리셀러를 상대로 소송한 회사가 변호사비까지 쓰고 패소한 판례가 있습니다.</p>
+  <p>그러니 이런 일이 왔을 때 할 일은 하나입니다. <b>조금 더 느긋하게.</b> "지금 경황이 없으니 한 시간 뒤에 통화하시죠"라는 요청은 거의 항상 받아들여집니다. 긴급 체포당할 일이 아니라면.</p>
+
+  <h3>규모가 커질수록 해야 하는 세 가지 공부</h3>
+  <div class="tl">
+    <div class="step"><h4>법</h4><p>규정을 해석해서 상대를 설득해야 하는 순간이 옵니다. "이 규정은 이렇게 해석해야 합니다"라고 말할 수 있어야 합니다.</p></div>
+    <div class="step"><h4>세금</h4><p>적게 벌 때는 공부할 필요가 없습니다. 많이 벌 때는 세무사와 작전을 짜는 것이 수익의 일부입니다.</p></div>
+    <div class="step"><h4>사람</h4><p>결국 직원 문제입니다. 월 500에 도달하면 이 공부가 시작됩니다.</p></div>
+  </div>
+  <p class="quote">숙제 같은 질문 하나: <b>월 10억, 100억을 버는 사람은 어떤 공부를 가장 많이 할까요?</b><span class="src">다음 세션에서 이어갑니다</span></p>
+</section>
+
+<section>
+  <div class="kicker">Part C</div>
+  <h2>스토어 데이터 읽기</h2>
+  <p class="lead">6주 치 그래프를 같이 봤습니다. 결론부터: 방향은 맞습니다. 다만 읽는 법을 알아야 합니다.</p>
+
+  <h3>금액 그래프와 건수 그래프는 다른 이야기를 한다</h3>
+  <p>매출 <b>금액</b>은 8월 중순부터 정체됐습니다. 그런데 결제 <b>건수</b>는 계단식으로 계속 올라갑니다. 두 그래프가 어긋나면 답은 하나입니다 — 운영이나 노출의 문제가 아니라 <b>객단가가 낮아진 것</b>입니다. 네이버 수수료는 금액 기준이니, 건수만 늘고 금액이 평이하면 순수익도 평이합니다.</p>
+  <div class="card"><h4>판단 기준</h4><p style="margin:0">다음 세션까지 건수가 계속 우상향하면 문제없음. 같은 패턴이 반복되며 정체되면 <b>고가 상품을 올려 금액을 끌어올립니다.</b></p></div>
+
+  <h3>요일 패턴이 말해주는 것</h3>
+  <p>정상적인 스토어는 <b>월·화 주문이 가장 많고</b> 수·목·금으로 갈수록 줄어듭니다. 대표님 스토어는 화요일이 수요일보다 적고, 월요일과 수요일이 비슷합니다. 이건 문제가 아니라 <b>잠재력</b>입니다. 월·화 관리가 정상화되면 그만큼 매출이 올라갈 여지가 있다는 뜻입니다. 사업 일지에서 월·화 등록량이 적었던 날이 있는지 확인해 보십시오.</p>
+
+  <h3>계단식 성장의 모양</h3>
+  <p>성장 시작 → 박스권 → 약 일주일 소폭 하락 → 폭발 성장 → 본격 성장. 주말은 낮습니다. 하락 구간이 보이면 "무슨 일이 있었나"를 일지에서 찾습니다. 심리적 이유일 수도, 등록 수 부족일 수도, 그냥 이 스토어의 고유 패턴일 수도 있습니다.</p>
+</section>
+
+<section>
+  <div class="kicker">Part D</div>
+  <h2>상품 운영 원칙</h2>
+  <p class="lead">세션에서 정한 규칙들입니다. 이 규칙 안에서는 묻지 않고 진행하셔도 됩니다.</p>
+  <ul>
+    <li><b>잘 팔리는 상품은 마진 크기와 무관하게 유지합니다.</b> 밥솥이 위탁 전용이어도 그대로 갑니다. 피벗은 필요할 때 결정하면 됩니다.</li>
+    <li><b>연관 상품을 찾을 때는 구매자의 리뷰 사진을 봅니다.</b> 밥솥과 같이 찍힌 주걱, 쌀통, 거치대, 관리용품. AI보다 사진이 정확합니다.</li>
+    <li><b>상품은 게임 아이템입니다.</b> 부서지면 더 좋은 것으로 갈아탑니다. 크게 반응하지 않습니다.</li>
+    <li><b>마진이 20원대로 떨어진 상품</b>은 가격을 1만 원 이상 올려 사실상 정지시키고, 공급처 링크를 즐겨찾기에 걸어 주말에 한 번 확인합니다. 할인이 복원되면 다시 내려서 팝니다.</li>
+    <li><b>자동 등록이 불안정한 동안은 수동 등록</b>이 낫습니다.</li>
+    <li><b>클레임은 정식 프로세스로.</b> 빠르게 처리하려고 선발송하는 것보다, 동일 불량이 재발할 때 공급처가 책임지도록 정식 교환 접수가 맞습니다.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="kicker">Homework</div>
+  <h2>이번 주 숙제</h2>
+  <ul class="check">
+    <li>하루 상품 <b>10개</b> 등록 — 고정 업무량. 뒤에 생기는 문제는 같이 해결합니다.</li>
+    <li>100문100답 하루 1~3문항 (혼자 안 써지면 다음 세션에서 같이 씁니다)</li>
+    <li>사업 일지에서 월·화 등록량, 하락 구간 원인 찾아보기</li>
+    <li>저마진 상품 정리 + 즐겨찾기 등록, 주말 점검</li>
+  </ul>
+  <div class="card dark"><div class="k">UNTIL 500</div><p style="margin:0;font-size:19px;font-weight:600">순수익 500까지는 매주 숙제가 있습니다.<br>그리고 500이 되면, 여행입니다.</p></div>
+
+  <div class="sig"><b>멘토루크 유믿음</b>원크루 · 2026년 9월</div>
+</section>
+
+</div></main>
+<footer>본 페이지는 박태경 대표 1인을 위한 비공개 세션 정리 자료입니다. 무단 공유를 삼가 주십시오.</footer>
+</body>
+</html>
