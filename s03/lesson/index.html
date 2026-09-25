@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>3회차 교육자료 · 규칙이 결정하게 합니다</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d1d1f;--gray:#6e6e73;--card:#f5f5f7;--line:#d2d2d7;--blue:#0071e3;--bg:#fff;--soft:#e8f0fe;--green:#1f9d55;--orange:#ff9f0a;--red:#ff375f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#f5f5f7;--gray:#a1a1a6;--card:#1c1c1e;--line:#3a3a3c;--blue:#0a84ff;--bg:#000;--soft:#0f1e3a;--green:#30d158}}
+:root[data-theme="dark"]{--ink:#f5f5f7;--gray:#a1a1a6;--card:#1c1c1e;--line:#3a3a3c;--blue:#0a84ff;--bg:#000;--soft:#0f1e3a;--green:#30d158}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif;font-size:16.5px;line-height:1.9;word-break:keep-all;-webkit-font-smoothing:antialiased}
+.hero{background:#000;color:#fff;padding:72px 22px 44px;position:relative;overflow:hidden}
+.hero .orb{position:absolute;right:-140px;top:-140px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#2c5cff 0%,#0a84ff 25%,rgba(10,132,255,0) 65%);opacity:.55}
+.wrap{max-width:620px;margin:0 auto;position:relative}
+.tag{font-size:11px;letter-spacing:.28em;color:#86868b;text-transform:uppercase}
+.hero h1{font-size:clamp(30px,8vw,44px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin:20px 0 12px}
+.hero h1 span{color:#0a84ff}
+.hero .sub{font-size:clamp(17px,4.6vw,21px);font-weight:500;color:#fff;margin:-4px 0 14px;letter-spacing:-.01em}
+.hero p{color:#a1a1a6;font-weight:300;font-size:16px;margin:0}
+.hero .meta{margin-top:24px;font-size:12px;color:#86868b;line-height:1.8}.hero .meta b{color:#fff;font-weight:500}
+nav.toc{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 22px;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}
+nav.toc a{display:inline-block;font-size:13px;color:var(--gray);text-decoration:none;padding:6px 12px;border-radius:999px;margin-right:4px;background:var(--card)}
+nav.toc a b{color:var(--blue);font-weight:600;margin-right:4px}
+main{padding:36px 22px 80px}
+section.lesson{margin-bottom:0;padding:56px 0 72px;border-top:1px solid var(--line)}
+section.lesson:first-of-type{border-top:0;padding-top:24px}
+.lnum{font-size:clamp(44px,14vw,72px);margin-top:4px;font-weight:700;letter-spacing:-.04em;line-height:1;color:var(--blue)}
+.kicker{font-size:11px;letter-spacing:.25em;color:var(--blue);text-transform:uppercase;font-weight:500;margin:10px 0 6px}
+h2{font-size:clamp(23px,6.5vw,30px);font-weight:700;letter-spacing:-.02em;line-height:1.2;margin:0 0 10px}
+.lead{font-size:16px;font-weight:300;color:var(--gray);margin:0 0 18px}
+h3{font-size:18px;font-weight:600;margin:40px 0 12px;letter-spacing:-.01em}
+p{margin:0 0 16px}b{font-weight:600}
+ul{padding-left:18px;margin:0 0 12px}li{margin-bottom:5px}
+.card{background:var(--card);border-radius:16px;padding:20px 22px;margin:24px 0}
+.card h4{margin:0 0 6px;font-size:15px;font-weight:600}
+.dark{background:#000;color:#fff;border-radius:16px;padding:22px;margin:30px 0}
+.dark .k{color:#0a84ff;font-size:11px;letter-spacing:.2em;margin-bottom:6px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dark{background:#1c1c1e}}
+:root[data-theme="dark"] .dark{background:#1c1c1e}
+.pull{font-size:clamp(19px,5.6vw,24px);font-weight:600;letter-spacing:-.015em;line-height:1.4;margin:34px 0}
+.pull span{color:var(--blue)}
+.tbl{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:20px 0 24px}
+table{width:100%;min-width:360px;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-weight:600;padding:9px 8px;border-bottom:1.5px solid var(--ink);font-size:13px}
+td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+td.hi{color:var(--blue);font-weight:600}
+.ans{background:var(--card);border-radius:14px;padding:14px 18px;margin:12px 0;font-size:14.5px}
+.ans .n{font-size:11px;color:var(--blue);letter-spacing:.1em;font-weight:500}
+.ans .a{font-weight:500}
+.todo{border-left:2px solid var(--blue);padding:6px 0 6px 16px;margin:36px 0 12px}
+.todo h4{margin:0 0 6px;font-size:13px;letter-spacing:.15em;color:var(--blue);text-transform:uppercase}
+.todo ul{margin:0}.todo li{font-size:15px}
+.q{font-size:15.5px;background:var(--card);border-radius:12px;padding:14px 18px;margin:12px 0;line-height:1.75}
+.q:before{content:"Q ";color:var(--blue);font-weight:700}
+.step{display:flex;gap:12px;margin:10px 0}
+.step .b{flex:none;width:26px;height:26px;border-radius:50%;background:var(--blue);color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center;margin-top:3px}
+.step p{margin:0}
+.btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;font-weight:500;font-size:14px;padding:11px 18px;border-radius:999px;margin-top:6px}
+.rest{background:linear-gradient(160deg,var(--card),transparent);border-radius:20px;padding:60px 22px;text-align:center;margin:24px 0 8px}
+.rest .label{font-size:11px;letter-spacing:.3em;color:var(--gray);text-transform:uppercase;margin-bottom:16px}
+.rest .qq{font-size:clamp(19px,5.6vw,25px);font-weight:600;line-height:1.45;letter-spacing:-.015em}
+.rest .who{margin-top:12px;font-size:13px;color:var(--gray)}
+.fig{margin:30px 0 34px}
+.fig svg{width:100%;height:auto;display:block}
+.fig .cap{font-size:13.5px;color:var(--gray);margin-top:12px;line-height:1.7}
+svg text{font-family:"Noto Sans KR",sans-serif;fill:var(--ink)}
+svg .g{fill:var(--gray)}svg .b{fill:var(--blue)}svg .bl{stroke:var(--blue)}svg .ln{stroke:var(--line)}svg .card{fill:var(--card)}svg .soft{fill:var(--soft)}svg .gr{fill:var(--green)}svg .or{fill:var(--orange)}svg .rd{fill:var(--red)}svg .w{fill:#fff}
+.chip{display:inline-block;font-size:12px;padding:3px 10px;border-radius:999px;background:var(--soft);color:var(--blue);font-weight:500;margin-right:6px}
+footer{border-top:1px solid var(--line);padding:24px 22px 44px;font-size:12px;color:var(--gray);text-align:center}
+.sig{margin-top:32px}.sig b{display:block;font-size:17px}
+.sum{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.sum div{background:var(--card);border-radius:14px;padding:14px}
+.sum .n{font-size:13px;color:var(--blue);font-weight:600;letter-spacing:.05em}
+.sum .t{font-size:14px;margin-top:4px;font-weight:500}
+</style>
+<style>
+.chk{list-style:none;padding:0;margin:12px 0}
+.chk li{position:relative;padding:12px 0 12px 34px;border-bottom:1px solid var(--line);font-size:15.5px}
+.chk li:before{content:"";position:absolute;left:0;top:15px;width:18px;height:18px;border:1.5px solid var(--ink);border-radius:5px}
+.chk li .d{display:block;font-size:13px;color:var(--gray);margin-top:2px}
+.sop{display:flex;gap:8px;margin:14px 0;flex-wrap:wrap}
+.sop div{flex:1 1 120px;background:var(--card);border-radius:12px;padding:12px;font-size:13.5px;text-align:center}
+.sop div b{display:block;font-size:20px;color:var(--blue);margin-bottom:4px}
+</style>
+</head>
+<body>
+<div class="hero"><div class="orb"></div><div class="wrap">
+  <div class="tag">OneCrew · Session 03 · Lesson Notes</div>
+  <h1>3회차 <span>교육자료</span></h1>
+  <div class="sub">감이 아니라 규칙이 결정하게 합니다</div>
+  <p>2회차는 관점을 바꿨습니다. 3회차는 그 관점을 표로 만듭니다. 현금흐름 달력, 손절 규칙표, 위협 대응 절차 — 세 장의 표가 오늘의 결과물입니다. 그리고 2회차에서 약속하고 못 드린 두 가지를 여기에 넣었습니다.</p>
+  <div class="meta"><b>박태경 대표</b> 귀하 · 2026년 9월 25일 · 3회차<br>작성 · 멘토루크 유믿음</div>
+</div></div>
+
+<nav class="toc">
+  <a href="#l0"><b>0</b>점검</a>
+  <a href="#l1"><b>1</b>현금흐름 달력</a>
+  <a href="#l2"><b>2</b>회전 시뮬레이션</a>
+  <a href="#l3"><b>3</b>손절 규칙표</a>
+  <a href="#l4"><b>4</b>객단가</a>
+  <a href="#l5"><b>5</b>기록 읽기</a>
+  <a href="#l6"><b>6</b>방화벽</a>
+  <a href="#l7"><b>7</b>67번</a>
+</nav>
+
+<main><div class="wrap">
+
+<div class="card" style="margin-top:0"><h4>2회차에서 이월된 것 (이 자료에 포함)</h4>
+<ul style="margin:0;font-size:15px">
+  <li><b>자금 회전 시뮬레이션</b> — 2회차에 말로만 했던 "같은 100만 원, 네 바퀴" → 레슨 2</li>
+  <li><b>법적 위협 대응 SOP</b> — "사무실 뒤집어엎겠다" 건에 대한 표준 절차 → 레슨 6</li>
+  <li><b>결정 규칙표·손절선·객단가</b> — 원래 2회차 초안에 있다가 미뤄진 것 → 레슨 3·4</li>
+  <li><b>시간 기록 시트 v3</b> — 24시간 기록 + 날짜 구분 버전 → 레슨 5에 링크</li>
+</ul></div>
+
+<section class="lesson" id="l0">
+  <div class="lnum">00</div>
+  <div class="kicker">Check-in</div>
+  <h2>열흘 전에 같이 정한 것,<br>몇 개가 됐습니까</h2>
+  <p class="lead">전부 됐을 필요 없습니다. 안 된 것이 무엇에 막혔는지가 오늘의 재료입니다. 하나씩 체크합니다.</p>
+  <ul class="chk">
+    <li>9/25 카드 대금 <span class="d">넘겼는지 · 선결제 몇 번 · 할부 전환 기능 썼는지</span></li>
+    <li>빠른 정산 신청 <span class="d">개설 3개월이 언제 · 신청 여부 · 취소율·배송 조건 관리 중인지</span></li>
+    <li>서브 스토어 1~2개 개설 <span class="d">기한 9/29 · 개설했는지</span></li>
+    <li>손절 라인 정책 (14품목 · 560만) <span class="d">기한 9/22 · 규칙을 적었는지 · 실제 턴 품목</span></li>
+    <li>1시간 단위 기록 시트 1주일 <span class="d">9/16~22 · 며칠 적었는지</span></li>
+    <li>고정 퇴근시간 <span class="d">정했는지 · 지켰는지</span></li>
+    <li>등록 303 → 500 <span class="d">9/30 목표 · 오늘 기준 목표 누적 ≈ 420 · 실제</span></li>
+    <li>구매확정 요청 문자 <span class="d">문안 · 발송 여부</span></li>
+    <li>카드 한도 증액 · 결제일 분산 문의 <span class="d">카드사에 물어봤는지</span></li>
+    <li>CS 외주/채용 옵션 비교 <span class="d">기한 9/29 · 월 200~300만 · 후보 접촉</span></li>
+    <li>쿠쿠 등 판매제한 브랜드 담당자 연락 <span class="d">시도했는지</span></li>
+  </ul>
+  <div class="dark"><div class="k">RULE</div><p style="margin:0;font-size:16px;font-weight:600">된 것의 개수보다, 안 된 것 옆에 "왜"를 한 단어로 적는 것이 오늘의 첫 작업입니다.</p></div>
+</section>
+
+<section class="lesson" id="l1">
+  <div class="lnum">01</div>
+  <div class="kicker">Lesson 1</div>
+  <h2>현금흐름 달력 —<br>나가는 날과 들어오는 날을 한 장에</h2>
+  <p class="lead">"사업이 잘될수록 통장이 마른다." 2회차에 하신 말입니다. 그 문장을 달력 위에 그리면 이유가 보입니다.</p>
+  <p>매출은 결제일에 잡히지만 돈은 정산일에 들어옵니다. 그 사이에 카드 결제일이 끼어 있으면, 매출이 늘수록 그 날의 구멍이 커집니다. 달력에 세 가지만 표시합니다: <b>카드 결제일(나감)</b>, <b>정산 예정일(들어옴)</b>, <b>사입 결제일·고정비(나감)</b>.</p>
+  <div class="fig">
+  <svg viewBox="0 0 600 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="10월 현금흐름 달력 예시">
+    <text x="0" y="20" font-size="16" font-weight="600">10월 현금흐름 달력 (예시 · 세션에서 실제 날짜로 채움)</text>
+    <g font-size="12" class="g"><text x="42" y="48" text-anchor="middle">일</text><text x="126" y="48" text-anchor="middle">월</text><text x="210" y="48" text-anchor="middle">화</text><text x="294" y="48" text-anchor="middle">수</text><text x="378" y="48" text-anchor="middle">목</text><text x="462" y="48" text-anchor="middle">금</text><text x="546" y="48" text-anchor="middle">토</text></g>
+    <g class="ln" stroke-width="1" fill="none">
+      <rect x="0" y="56" width="600" height="240" rx="8"/>
+      <line x1="0" y1="104" x2="600" y2="104"/><line x1="0" y1="152" x2="600" y2="152"/><line x1="0" y1="200" x2="600" y2="200"/><line x1="0" y1="248" x2="600" y2="248"/>
+      <line x1="84" y1="56" x2="84" y2="296"/><line x1="168" y1="56" x2="168" y2="296"/><line x1="252" y1="56" x2="252" y2="296"/><line x1="336" y1="56" x2="336" y2="296"/><line x1="420" y1="56" x2="420" y2="296"/><line x1="504" y1="56" x2="504" y2="296"/>
+    </g>
+    <g font-size="11" class="g">
+      <text x="342" y="70">1</text><text x="426" y="70">2</text><text x="510" y="70">3</text>
+      <text x="6" y="118">4</text><text x="90" y="118">5</text><text x="174" y="118">6</text><text x="258" y="118">7</text><text x="342" y="118">8</text><text x="426" y="118">9</text><text x="510" y="118">10</text>
+      <text x="6" y="166">11</text><text x="90" y="166">12</text><text x="174" y="166">13</text><text x="258" y="166">14</text><text x="342" y="166">15</text><text x="426" y="166">16</text><text x="510" y="166">17</text>
+      <text x="6" y="214">18</text><text x="90" y="214">19</text><text x="174" y="214">20</text><text x="258" y="214">21</text><text x="342" y="214">22</text><text x="426" y="214">23</text><text x="510" y="214">24</text>
+      <text x="6" y="262">25</text><text x="90" y="262">26</text><text x="174" y="262">27</text><text x="258" y="262">28</text><text x="342" y="262">29</text><text x="426" y="262">30</text><text x="510" y="262">31</text>
+    </g>
+    <rect x="426" y="76" width="70" height="20" rx="5" class="gr"/><text x="461" y="90" font-size="11" text-anchor="middle" class="w" font-weight="600">정산 +</text>
+    <rect x="90" y="124" width="70" height="20" rx="5" class="rd"/><text x="125" y="138" font-size="11" text-anchor="middle" class="w" font-weight="600">사입 −</text>
+    <rect x="426" y="124" width="70" height="20" rx="5" class="gr"/><text x="461" y="138" font-size="11" text-anchor="middle" class="w" font-weight="600">정산 +</text>
+    <rect x="426" y="172" width="70" height="20" rx="5" class="gr"/><text x="461" y="186" font-size="11" text-anchor="middle" class="w" font-weight="600">정산 +</text>
+    <rect x="426" y="220" width="70" height="20" rx="5" class="gr"/><text x="461" y="234" font-size="11" text-anchor="middle" class="w" font-weight="600">정산 +</text>
+    <rect x="6" y="268" width="72" height="20" rx="5" class="rd"/><text x="42" y="282" font-size="11" text-anchor="middle" class="w" font-weight="600">카드 −−</text>
+    <rect x="258" y="220" width="70" height="20" rx="5" class="or"/><text x="293" y="234" font-size="11" text-anchor="middle" class="w" font-weight="600">고정비 −</text>
+    <text x="300" y="322" font-size="12.5" text-anchor="middle" class="g">25일 카드 결제 전에 정산이 몇 번 들어오는지 — 그게 이번 달의 숨통입니다</text>
+  </svg>
+  <div class="cap">빠른 정산이 적용되면 초록 칸이 매주에서 매일로 바뀝니다. 그 전까지는 25일 앞의 초록 칸 개수가 전부입니다.</div>
+  </div>
+  <h3>같이 채울 순서</h3>
+  <div class="step"><div class="b">1</div><p>카드별 결제일을 빨간 칸으로 (카드가 여러 장이면 전부).</p></div>
+  <div class="step"><div class="b">2</div><p>정산 예정일을 초록 칸으로 — 지금 정산 주기 기준. 구매확정이 빨라지면 앞당겨짐.</p></div>
+  <div class="step"><div class="b">3</div><p>사입 결제 예정과 고정비(사무실·통신·소프트웨어)를 주황 칸으로.</p></div>
+  <div class="step"><div class="b">4</div><p>빨간 칸 직전 7일 안에 초록 칸이 몇 개인지 센다. 부족하면 그 주가 위험 주간.</p></div>
+  <div class="todo"><h4>오늘 같이 할 것</h4><ul><li>10월 달력을 실제 날짜로 채운다</li><li>위험 주간을 한 주 짚는다</li><li>그 주에 쓸 수 있는 수단을 정한다: 할부 전환 · 결제일 분산 · 구매확정 문자 집중</li></ul></div>
+</section>
+
+<section class="lesson" id="l2">
+  <div class="lnum">02</div>
+  <div class="kicker">Lesson 2 · 2회차 이월</div>
+  <h2>같은 100만 원,<br>한 바퀴와 네 바퀴</h2>
+  <p class="lead">2회차에 말로만 하고 자료로 못 드린 것입니다. 숫자로 보면 사입 결정이 달라집니다.</p>
+  <div class="fig">
+  <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="자금 회전 시뮬레이션">
+    <text x="0" y="20" font-size="16" font-weight="600">100만 원 · 마진 10% · 한 달 뒤 손에 남는 마진</text>
+    <text x="0" y="56" font-size="13.5" font-weight="600" class="g">A · 30일에 한 바퀴 (느린 상품)</text>
+    <rect x="0" y="66" width="600" height="30" rx="6" class="card"/>
+    <rect x="0" y="66" width="600" height="30" rx="6" class="g" opacity=".45"/>
+    <text x="300" y="86" font-size="13" text-anchor="middle" class="w" font-weight="600">사입 100만 → 30일 → 회수 110만</text>
+    <text x="600" y="120" font-size="15" text-anchor="end" font-weight="700">마진 10만</text>
+    <text x="0" y="160" font-size="13.5" font-weight="600" class="b">B · 7일에 한 바퀴 (빠른 상품) × 4</text>
+    <rect x="0" y="170" width="150" height="30" rx="6" class="b"/><text x="75" y="190" font-size="12" text-anchor="middle" class="w" font-weight="600">+10만</text>
+    <rect x="150" y="170" width="150" height="30" class="b" opacity=".85"/><text x="225" y="190" font-size="12" text-anchor="middle" class="w" font-weight="600">+10만</text>
+    <rect x="300" y="170" width="150" height="30" class="b" opacity=".7"/><text x="375" y="190" font-size="12" text-anchor="middle" class="w" font-weight="600">+10만</text>
+    <rect x="450" y="170" width="150" height="30" rx="6" class="b" opacity=".55"/><text x="525" y="190" font-size="12" text-anchor="middle" class="w" font-weight="600">+10만</text>
+    <text x="600" y="224" font-size="15" text-anchor="end" font-weight="700" class="b">마진 40만 (같은 돈)</text>
+    <text x="0" y="262" font-size="13" class="g">마진율이 6%로 낮아도 7일에 돌면 → 6 × 4 = 24만. 15%인데 30일이면 15만.</text>
+    <text x="0" y="284" font-size="13" class="b" font-weight="600">→ 사입 후보는 "마진율"이 아니라 "며칠에 도는가"로 고릅니다.</text>
+  </svg>
+  </div>
+  <div class="tbl"><table>
+    <tr><th>상품</th><th>마진율</th><th>회전 일수</th><th>월 회전</th><th>100만 원당 월 마진</th></tr>
+    <tr><td>느린 고마진</td><td>15%</td><td>30일</td><td>1회</td><td>15만</td></tr>
+    <tr><td>보통</td><td>10%</td><td>15일</td><td>2회</td><td>20만</td></tr>
+    <tr><td class="hi">빠른 저마진</td><td>6%</td><td>7일</td><td>4회</td><td class="hi">24만</td></tr>
+  </table></div>
+  <p>그래서 사입 기준은 두 줄입니다. <b>① 주간 리뷰 10개 이상</b>(돈다는 증거) <b>② 가용 자본의 10% 이내</b>(한 품목이 전체를 묶지 않게). 이 두 줄을 통과한 것만 선사입, 나머지는 반사입.</p>
+</section>
+
+<section class="lesson" id="l3">
+  <div class="lnum">03</div>
+  <div class="kicker">Lesson 3</div>
+  <h2>손절 규칙표 —<br>14품목을 표에 올립니다</h2>
+  <p class="lead">규칙이 없으면 재고를 볼 때마다 결정을 다시 합니다. 규칙이 있으면 표가 결정하고 대표님은 실행만 합니다.</p>
+  <div class="fig">
+  <svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="손절 판정 흐름">
+    <text x="0" y="20" font-size="16" font-weight="600">사입 후 주차별 판정</text>
+    <rect x="0" y="50" width="130" height="80" rx="12" class="card"/><text x="65" y="80" font-size="14" text-anchor="middle" font-weight="700">1~2주</text><text x="65" y="104" font-size="12" text-anchor="middle" class="g">정상 판매면</text><text x="65" y="120" font-size="12" text-anchor="middle" class="b" font-weight="600">재사입 검토</text>
+    <polygon points="138,90 152,83 152,97" class="b"/>
+    <rect x="158" y="50" width="130" height="80" rx="12" class="soft"/><text x="223" y="80" font-size="14" text-anchor="middle" font-weight="700">3주</text><text x="223" y="104" font-size="12" text-anchor="middle" class="g">판매 __개 미만</text><text x="223" y="120" font-size="12" text-anchor="middle" class="or" font-weight="600">가격 인하 1단계</text>
+    <polygon points="296,90 310,83 310,97" class="b"/>
+    <rect x="316" y="50" width="130" height="80" rx="12" class="soft"/><text x="381" y="80" font-size="14" text-anchor="middle" font-weight="700">4주</text><text x="381" y="104" font-size="12" text-anchor="middle" class="g">여전히 안 돌면</text><text x="381" y="120" font-size="12" text-anchor="middle" class="rd" font-weight="600">원가 근처 덤핑</text>
+    <polygon points="454,90 468,83 468,97" class="b"/>
+    <rect x="474" y="50" width="126" height="80" rx="12" class="b"/><text x="537" y="80" font-size="14" text-anchor="middle" font-weight="700" class="w">회수</text><text x="537" y="104" font-size="12" text-anchor="middle" class="w" opacity=".85">원금 → 도는</text><text x="537" y="120" font-size="12" text-anchor="middle" class="w" opacity=".85">상품으로 이동</text>
+    <text x="0" y="170" font-size="13" class="g">2회차에 같이 정한 원칙: 2~3주 무판매 → 인하, 4주차 → 덤핑해서라도 원금 회수. 빈칸(__)은 오늘 채웁니다.</text>
+    <text x="0" y="190" font-size="13" class="b" font-weight="600">손절은 손해가 아닙니다. 묶인 돈을 도는 돈으로 바꾸는 것입니다.</text>
+  </svg>
+  </div>
+  <h3>오늘 채울 표</h3>
+  <div class="tbl"><table>
+    <tr><th>품목</th><th>사입일</th><th>사입액</th><th>지금 몇 주차</th><th>누적 판매</th><th>판정</th><th>실행</th></tr>
+    <tr><td>1</td><td></td><td></td><td></td><td></td><td>재사입 / 인하 / 덤핑</td><td></td></tr>
+    <tr><td>2</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>3</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>…</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>14</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  </table></div>
+  <div class="todo"><h4>오늘 같이 할 것</h4><ul><li>14품목 전부 표에 올린다 (560만 원의 분포)</li><li>"3주 · __개 미만"의 빈칸 숫자를 정한다</li><li>덤핑 대상을 오늘 정하고, 이번 주 안에 실행할 것 하나를 고른다</li></ul></div>
+</section>
+
+<section class="lesson" id="l4">
+  <div class="lnum">04</div>
+  <div class="kicker">Lesson 4</div>
+  <h2>객단가 — 같은 고객에게<br>두 건을 팝니다</h2>
+  <p class="lead">자금 없이 마진을 늘리는 가장 빠른 방법. 2회차 크로스셀 그림의 실행판입니다.</p>
+  <div class="tbl"><table>
+    <tr><th>방법</th><th>무엇을</th><th>어디에</th><th>효과</th></tr>
+    <tr><td><b>미끼 + 마진</b></td><td>최저가 밥솥(유입)과 옆에 붙는 마진 상품 분리</td><td>연관 상품 · 상세 하단</td><td>유입은 최저가로, 마진은 옆에서</td></tr>
+    <tr><td><b>묶음</b></td><td>2·3·4개 단위 옵션</td><td>옵션 설정</td><td>건당 마진 ×2~4, 배송비 1회</td></tr>
+    <tr><td><b>업셀</b></td><td>상위 모델을 "이 차이면 이쪽"으로 제시</td><td>상세 상단 비교표</td><td>건당 마진 ×2~3</td></tr>
+  </table></div>
+  <div class="todo"><h4>오늘 같이 할 것</h4><ul><li>밥솥 기준 크로스셀 후보 3개, 업셀 후보 1개 확정 (2회차 숙제 확인)</li><li>묶음 옵션을 만들 상품 1개 고른다</li></ul></div>
+</section>
+
+<section class="lesson" id="l5">
+  <div class="lnum">05</div>
+  <div class="kicker">Lesson 5</div>
+  <h2>기록 읽기 —<br>통계 탭이 하는 말</h2>
+  <p class="lead">시트를 적었으면 통계 탭을 같이 봅니다. 안 적었으면 어제 하루를 이 자리에서 같이 적습니다. 숙제는 혼자 하는 게 아니라 여기서 같이 합니다.</p>
+  <div class="fig">
+  <svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="통계 탭 세 신호">
+    <text x="0" y="20" font-size="16" font-weight="600">통계 탭에서 볼 세 숫자</text>
+    <rect x="0" y="44" width="188" height="150" rx="14" class="card"/><text x="94" y="80" font-size="13" text-anchor="middle" font-weight="700">휴식 비율</text><text x="94" y="120" font-size="26" text-anchor="middle" font-weight="700" class="rd">&lt; 15%</text><text x="94" y="150" font-size="12" text-anchor="middle" class="g">빨간불 · 내일은</text><text x="94" y="168" font-size="12" text-anchor="middle" class="g">휴식을 먼저 배치</text>
+    <rect x="206" y="44" width="188" height="150" rx="14" class="card"/><text x="300" y="80" font-size="13" text-anchor="middle" font-weight="700">멍때림 + 망상</text><text x="300" y="120" font-size="26" text-anchor="middle" font-weight="700" class="or">≥ 6 / 일</text><text x="300" y="150" font-size="12" text-anchor="middle" class="g">집중 깨짐 · 블록을</text><text x="300" y="168" font-size="12" text-anchor="middle" class="g">60분 이하로 줄임</text>
+    <rect x="412" y="44" width="188" height="150" rx="14" class="card"/><text x="506" y="80" font-size="13" text-anchor="middle" font-weight="700">시간당 건수</text><text x="506" y="120" font-size="26" text-anchor="middle" font-weight="700" class="b">발주 __</text><text x="506" y="150" font-size="12" text-anchor="middle" class="g">건당 분이 큰 활동이</text><text x="506" y="168" font-size="12" text-anchor="middle" class="g">이관 1순위</text>
+    <text x="300" y="214" font-size="12.5" text-anchor="middle" class="g">세 숫자 중 하나라도 켜지면, 직원이 아니라 운영자가 근무표를 고칩니다</text>
+  </svg>
+  </div>
+  <div class="card"><h4>시간 기록 시트 (최신 v3)</h4>
+    <p style="margin:0 0 8px;font-size:15px">날짜별 구분 헤더 + 00–24시 1시간 단위. 탭: 기록 / 통계 / 등록 트래커.</p>
+    <a class="btn" href="https://docs.google.com/spreadsheets/d/1D2d49TpNKhFNQMYujrfH5WyviHX6ID5UezVp2jvuIYo/edit" target="_blank" rel="noopener">시트 열기</a>
+  </div>
+  <div class="todo"><h4>오늘 같이 할 것</h4><ul><li>기록이 있으면: 통계 탭의 판정 열을 위에서 아래로 읽는다</li><li>없으면: 어제 하루를 24칸에 같이 채운다 (10분)</li><li>등록 트래커: 오늘 누적을 적고 9/30까지 남은 개수 ÷ 남은 날</li></ul></div>
+</section>
+
+<section class="lesson" id="l6">
+  <div class="lnum">06</div>
+  <div class="kicker">Lesson 6 · 2회차 이월</div>
+  <h2>방화벽 —<br>위협은 절차로 받습니다</h2>
+  <p class="lead">"사무실 뒤집어엎겠다"는 말에 판매가 위축됐다고 하셨습니다. 그 말은 대표님 문제가 아니라 상대방의 문제(협박죄 소지)입니다. 그래도 매번 마음으로 받으면 소모됩니다. 그래서 절차로 받습니다.</p>
+  <div class="sop">
+    <div><b>1</b>캡처·녹취<br><span style="color:var(--gray)">날짜·채널·원문 그대로</span></div>
+    <div><b>2</b>표준 답변<br><span style="color:var(--gray)">감정 없이 한 문장</span></div>
+    <div><b>3</b>24시간 대기<br><span style="color:var(--gray)">즉답하지 않음</span></div>
+    <div><b>4</b>자문 전달<br><span style="color:var(--gray)">멘토 → 필요 시 법률</span></div>
+  </div>
+  <div class="card"><h4>표준 답변 (복사해서 쓰는 한 문장)</h4>
+    <p style="margin:0;font-size:15px">"말씀하신 내용은 기록해 두었습니다. 상표·판매 권리와 관련한 문의는 서면(이메일)으로 보내주시면 확인 후 답변드리겠습니다."</p>
+    <p style="margin:8px 0 0;font-size:13.5px;color:var(--gray)">전화·DM으로 오는 위협에는 이 문장만 보내고 끊습니다. 협상도, 해명도 하지 않습니다.</p>
+  </div>
+  <h3>CS를 대표에게서 떼어냅니다</h3>
+  <p>감정 소모가 큰 접점(CS·분쟁)을 대표가 직접 받으면 그날의 등록 블록이 사라집니다. 순서는 이렇습니다: <b>① 와이프에게 단순 CS 이관(무료)</b> → <b>② 파트타임/외주(월 200~300만)</b>. 2회차 숙제(9/29 후보 접촉)를 오늘 확인합니다.</p>
+  <h3>판매제한 브랜드에 직접 묻습니다</h3>
+  <div class="card"><h4>쿠쿠 등 담당자 연락 스크립트</h4>
+    <p style="margin:0;font-size:15px">"스마트스토어에서 귀사 제품을 판매 중인 셀러입니다. 온라인 재판매 정책과 정식 유통 경로(총판·대리점)를 안내받고 싶습니다. 조건을 맞추면 판매 허가가 가능한지 여쭙니다."</p>
+    <p style="margin:8px 0 0;font-size:13.5px;color:var(--gray)">막힌 브랜드는 포기가 아니라 문의입니다. 답이 "안 된다"여도 이유를 알면 다음 브랜드를 고를 때 기준이 생깁니다.</p>
+  </div>
+  <div class="todo"><h4>오늘 같이 할 것</h4><ul><li>표준 답변을 대표님 폰 메모에 저장한다</li><li>이관 가능한 CS 유형 3가지를 적는다 (송장 조회·배송 문의·단순 교환)</li><li>브랜드 담당자에게 보낼 문의를 세션 중에 발송한다</li></ul></div>
+</section>
+
+<div class="rest"><div class="label">Pause</div><div class="qq">"현재는 없다."</div><div class="who">— 2회차에 다시 물었던 67번. 열흘이 지났습니다.</div></div>
+
+<section class="lesson" id="l7">
+  <div class="lnum">07</div>
+  <div class="kicker">Lesson 7</div>
+  <h2>67번, 열흘 뒤</h2>
+  <p class="lead">"1년 뒤 67번에 뭐라고 쓰고 싶으십니까." 오늘 정할 필요는 없다고 했습니다. 그래도 한 번 더 묻습니다.</p>
+  <div class="q">열흘 동안 검수하다가, 고객 문자에 답하다가, "이건 나한테 사는 이유가 될 수 있겠다" 싶은 순간이 한 번이라도 있었습니까?</div>
+  <div class="q">11번에 쓰신 "밤새 고객 문제 해결해서 리텐션 계약" — 그 사람이 지금 스마트스토어에서 하고 있는 일은 무엇입니까?</div>
+  <p>답이 없어도 됩니다. 사입이 시작되고 검수가 손에 잡히면, 답은 표가 아니라 손에서 나옵니다.</p>
+</section>
+
+<section class="lesson" id="sum" style="margin-bottom:24px">
+  <div class="kicker">Summary</div>
+  <h2>오늘 끝나면 손에 있어야 하는 것</h2>
+  <div class="sum">
+    <div><div class="n">01</div><div class="t">10월 현금흐름 달력 (위험 주간 1개 표시)</div></div>
+    <div><div class="n">02</div><div class="t">14품목 손절 규칙표 (판정 · 이번 주 실행 1개)</div></div>
+    <div><div class="n">03</div><div class="t">폰 메모에 저장된 표준 답변 한 문장</div></div>
+    <div><div class="n">04</div><div class="t">기록 시트 통계 탭에서 켜진 신호 하나와 내일의 조정</div></div>
+    <div style="grid-column:1/-1"><div class="n">05</div><div class="t">크로스셀 3 · 업셀 1 · 묶음 1 확정 / 9월 순이익 추정치 한 줄 (매출 말고 남은 돈)</div></div>
+  </div>
+  <div class="sig"><b>멘토루크 유믿음</b>원크루 · 3회차 · 2026년 9월 25일</div>
+</section>
+
+</div></main>
+<footer>박태경 대표 1인을 위한 비공개 교육자료입니다. 무단 공유를 삼가 주십시오.</footer>
+</body>
+</html>
