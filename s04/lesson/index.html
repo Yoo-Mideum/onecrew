@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>4회차 컨설팅 · 표가 맞았는지 확인합니다</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d1d1f;--gray:#6e6e73;--card:#f5f5f7;--line:#d2d2d7;--blue:#0071e3;--bg:#fff;--soft:#e8f0fe;--green:#1f9d55;--orange:#ff9f0a;--red:#ff375f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#f5f5f7;--gray:#a1a1a6;--card:#1c1c1e;--line:#3a3a3c;--blue:#0a84ff;--bg:#000;--soft:#0f1e3a;--green:#30d158}}
+:root[data-theme="dark"]{--ink:#f5f5f7;--gray:#a1a1a6;--card:#1c1c1e;--line:#3a3a3c;--blue:#0a84ff;--bg:#000;--soft:#0f1e3a;--green:#30d158}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif;font-size:16.5px;line-height:1.9;word-break:keep-all;-webkit-font-smoothing:antialiased}
+.hero{background:#000;color:#fff;padding:72px 22px 44px;position:relative;overflow:hidden}
+.hero .orb{position:absolute;right:-140px;top:-140px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#2c5cff 0%,#0a84ff 25%,rgba(10,132,255,0) 65%);opacity:.55}
+.wrap{max-width:620px;margin:0 auto;position:relative}
+.tag{font-size:11px;letter-spacing:.28em;color:#86868b;text-transform:uppercase}
+.hero h1{font-size:clamp(30px,8vw,44px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin:20px 0 12px}
+.hero h1 span{color:#0a84ff}
+.hero .sub{font-size:clamp(17px,4.6vw,21px);font-weight:500;color:#fff;margin:-4px 0 14px;letter-spacing:-.01em}
+.hero p{color:#a1a1a6;font-weight:300;font-size:16px;margin:0}
+.date{margin-top:26px;font-size:14px;color:#a1a1a6}.date b{color:#fff;font-weight:600}
+.when{display:inline-flex;align-items:center;gap:9px;margin-top:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:9px 15px;font-size:13px;color:#fff}.when b{font-weight:600}.when .dot{width:7px;height:7px;border-radius:50%;background:#0a84ff;box-shadow:0 0 0 4px rgba(10,132,255,.25)}
+.hero .meta{margin-top:24px;font-size:12px;color:#86868b;line-height:1.8}.hero .meta b{color:#fff;font-weight:500}
+nav.toc{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 22px;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}
+nav.toc a{display:inline-block;font-size:13px;color:var(--gray);text-decoration:none;padding:6px 12px;border-radius:999px;margin-right:4px;background:var(--card)}
+nav.toc a b{color:var(--blue);font-weight:600;margin-right:4px}
+main{padding:36px 22px 80px}
+section.lesson{margin-bottom:0;padding:56px 0 72px;border-top:1px solid var(--line)}
+section.lesson:first-of-type{border-top:0;padding-top:24px}
+.lnum{font-size:clamp(44px,14vw,72px);margin-top:4px;font-weight:700;letter-spacing:-.04em;line-height:1;color:var(--blue)}
+.kicker{font-size:11px;letter-spacing:.25em;color:var(--blue);text-transform:uppercase;font-weight:500;margin:10px 0 6px}
+h2{font-size:clamp(23px,6.5vw,30px);font-weight:700;letter-spacing:-.02em;line-height:1.2;margin:0 0 10px}
+.lead{font-size:16px;font-weight:300;color:var(--gray);margin:0 0 18px}
+h3{font-size:18px;font-weight:600;margin:40px 0 12px;letter-spacing:-.01em}
+p{margin:0 0 16px}b{font-weight:600}
+ul{padding-left:18px;margin:0 0 12px}li{margin-bottom:5px}
+.card{background:var(--card);border-radius:16px;padding:20px 22px;margin:24px 0}
+.card h4{margin:0 0 6px;font-size:15px;font-weight:600}
+.dark{background:#000;color:#fff;border-radius:16px;padding:22px;margin:30px 0}
+.dark .k{color:#0a84ff;font-size:11px;letter-spacing:.2em;margin-bottom:6px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dark{background:#1c1c1e}}
+:root[data-theme="dark"] .dark{background:#1c1c1e}
+.pull{font-size:clamp(19px,5.6vw,24px);font-weight:600;letter-spacing:-.015em;line-height:1.4;margin:34px 0}
+.pull span{color:var(--blue)}
+.tbl{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:20px 0 24px}
+table{width:100%;min-width:360px;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-weight:600;padding:9px 8px;border-bottom:1.5px solid var(--ink);font-size:13px}
+td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+td.hi{color:var(--blue);font-weight:600}
+.ans{background:var(--card);border-radius:14px;padding:14px 18px;margin:12px 0;font-size:14.5px}
+.ans .n{font-size:11px;color:var(--blue);letter-spacing:.1em;font-weight:500}
+.ans .a{font-weight:500}
+.todo{border-left:2px solid var(--blue);padding:6px 0 6px 16px;margin:36px 0 12px}
+.todo h4{margin:0 0 6px;font-size:13px;letter-spacing:.15em;color:var(--blue);text-transform:uppercase}
+.todo ul{margin:0}.todo li{font-size:15px}
+.q{font-size:15.5px;background:var(--card);border-radius:12px;padding:14px 18px;margin:12px 0;line-height:1.75}
+.q:before{content:"Q ";color:var(--blue);font-weight:700}
+.step{display:flex;gap:12px;margin:10px 0}
+.step .b{flex:none;width:26px;height:26px;border-radius:50%;background:var(--blue);color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center;margin-top:3px}
+.step p{margin:0}
+.btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;font-weight:500;font-size:14px;padding:11px 18px;border-radius:999px;margin-top:6px}
+.rest{background:linear-gradient(160deg,var(--card),transparent);border-radius:20px;padding:60px 22px;text-align:center;margin:24px 0 8px}
+.rest .label{font-size:11px;letter-spacing:.3em;color:var(--gray);text-transform:uppercase;margin-bottom:16px}
+.rest .qq{font-size:clamp(19px,5.6vw,25px);font-weight:600;line-height:1.45;letter-spacing:-.015em}
+.rest .who{margin-top:12px;font-size:13px;color:var(--gray)}
+.fig{margin:30px 0 34px}
+.fig svg{width:100%;height:auto;display:block}
+.fig .cap{font-size:13.5px;color:var(--gray);margin-top:12px;line-height:1.7}
+svg text{font-family:"Noto Sans KR",sans-serif;fill:var(--ink)}
+svg .g{fill:var(--gray)}svg .b{fill:var(--blue)}svg .bl{stroke:var(--blue)}svg .ln{stroke:var(--line)}svg .card{fill:var(--card)}svg .soft{fill:var(--soft)}svg .gr{fill:var(--green)}svg .or{fill:var(--orange)}svg .rd{fill:var(--red)}svg .w{fill:#fff}
+.chip{display:inline-block;font-size:12px;padding:3px 10px;border-radius:999px;background:var(--soft);color:var(--blue);font-weight:500;margin-right:6px}
+footer{border-top:1px solid var(--line);padding:24px 22px 44px;font-size:12px;color:var(--gray);text-align:center}
+.sig{margin-top:32px}.sig b{display:block;font-size:17px}
+.sum{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.sum div{background:var(--card);border-radius:14px;padding:14px}
+.sum .n{font-size:13px;color:var(--blue);font-weight:600;letter-spacing:.05em}
+.sum .t{font-size:14px;margin-top:4px;font-weight:500}
+</style>
+<style>
+.chk{list-style:none;padding:0;margin:12px 0}
+.chk li{position:relative;padding:12px 0 12px 34px;border-bottom:1px solid var(--line);font-size:15.5px}
+.chk li:before{content:"";position:absolute;left:0;top:15px;width:18px;height:18px;border:1.5px solid var(--ink);border-radius:5px}
+.chk li .d{display:block;font-size:13px;color:var(--gray);margin-top:2px}
+.sop{display:flex;gap:8px;margin:14px 0;flex-wrap:wrap}
+.sop div{flex:1 1 120px;background:var(--card);border-radius:12px;padding:12px;font-size:13.5px;text-align:center}
+.sop div b{display:block;font-size:20px;color:var(--blue);margin-bottom:4px}
+
+.src{background:var(--card);border-left:3px solid var(--blue);border-radius:0 12px 12px 0;padding:12px 16px;margin:18px 0;font-size:14px;line-height:1.7}
+.src .h{font-size:11px;letter-spacing:.18em;color:var(--blue);font-weight:600;text-transform:uppercase;margin-bottom:6px}
+.src p{margin:0 0 6px}.src p:last-child{margin:0}
+.src i{color:var(--gray);font-style:normal;font-size:13px}
+.ref{font-size:13.5px;line-height:1.7;color:var(--gray)}
+.ref li{margin-bottom:8px}
+
+.tl{position:relative;margin:24px 0;padding-left:0}
+.tl .row{display:flex;gap:14px;padding:16px 0;border-top:1px solid var(--line)}
+.tl .row:last-child{border-bottom:1px solid var(--line)}
+.tl .tm{flex:none;width:64px;font-size:13px;color:var(--blue);font-weight:600;letter-spacing:.02em;padding-top:2px}
+.tl .bd h4{margin:0 0 6px;font-size:16.5px;font-weight:600;letter-spacing:-.01em}
+.tl .bd p{margin:0;font-size:14.5px;color:var(--ink)}
+.tl .bd .n{margin-top:6px;font-size:13px;color:var(--gray)}
+.tl .rest .bd h4{color:var(--gray)}
+.pill{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;background:var(--soft);color:var(--blue);font-weight:600;margin-left:6px;vertical-align:middle}
+.pill.new{background:#e6f4ea;color:#1f9d55}
+</style>
+</head>
+<body>
+<div class="hero"><div class="orb"></div><div class="wrap">
+  <div class="tag">OneCrew · Session 04 · Timeline</div>
+  <h1>4회차 <span>컨설팅</span></h1>
+  <div class="sub">표가 맞았는지 확인합니다</div>
+  <p>3회차에서 표를 만들었습니다. 4회차는 그 표대로 열흘이 흘렀는지 봅니다. 달력이 맞았는지, 손절이 실행됐는지, 기록이 뭐라고 하는지. 그리고 9월의 성적표 한 줄.</p>
+  <div class="date">3회차가 짧게 끝난 만큼, 못 다룬 것은 이 회차에 이월돼 있습니다</div>
+  <div class="when"><span class="dot"></span><span>세션까지 <b id="cd"></b></span></div>
+  <div class="meta"><b>박태경 대표</b> 귀하 · 2026년 10월 · 4회차<br>작성 · 멘토루크 유믿음</div>
+</div></div>
+
+<nav class="toc">
+  <a href="#tl"><b>·</b>타임라인</a><a href="#new"><b>·</b>이번 회차 새 것</a><a href="#carry"><b>·</b>3회차 이월</a><a href="#bring"><b>·</b>준비물</a>
+</nav>
+
+<main><div class="wrap">
+
+<div class="card" style="margin-top:0"><h4>이 회차의 원칙 하나</h4>
+<p style="margin:0;font-size:15px">표를 만들었으면 표를 믿어야 합니다. 그런데 믿으려면 표가 맞았다는 것을 한 번은 확인해야 합니다. 10월 첫 주의 실제 입출금이 달력과 맞았는지, 덤핑한 돈이 정말 돌아왔는지, 휴식 비율이 진짜 15% 아래였는지. <b>예측이 맞으면 표를 믿게 되고, 틀리면 표를 고칩니다.</b> 둘 다 이깁니다. 감으로 돌아가는 것만 집니다.</p></div>
+
+<section class="lesson" id="tl">
+  <div class="lnum">04</div>
+  <div class="kicker">Timeline · 2시간</div>
+  <h2>오늘의 순서</h2>
+  <p class="lead">시각은 시작 기준입니다. 3회차에서 이미 채운 표가 있으면 그 블록은 확인으로 줄이고, 남는 시간은 뒤로 넘깁니다.</p>
+
+  <div class="tl">
+    <div class="row"><div class="tm">0:00</div><div class="bd"><h4>컨디션 · 열흘 점검</h4><p>아프신 뒤 상태부터. 3회차 점검표 11개 중 안 된 것 옆에 "왜"를 한 단어로 — 발주에 밀려서 / 무서워서 / 몰라서 / 잊어서.</p><div class="n">10분 · 넷은 각각 처방이 다릅니다. 배치 / 절차 / 같이 하기 / 시트에 넣기.</div></div></div>
+    <div class="row"><div class="tm">0:10</div><div class="bd"><h4>9월 결산 한 줄 <span class="pill new">NEW</span></h4><p>9월에 남은 돈(매출 말고). 등록 트래커 최종(303 → ?, 목표 500). 9/25 카드 결제 결과. 빠른 정산 신청 여부.</p><div class="n">10분 · 월 순이익 500~700 × 3개월 목표의 첫 달 성적표. 숫자가 작아도 한 줄로 말하는 것이 목적.</div></div></div>
+    <div class="row"><div class="tm">0:20</div><div class="bd"><h4>10월 현금흐름 달력 <span class="pill">3회차 이월</span></h4><p>카드 결제일(빨강) · 정산 예정일(초록) · 사입·고정비(주황)를 실제 날짜로. 빨간 칸 앞 7일에 초록 칸이 몇 개인지 → 위험 주간 1개 확정 → 할부 전환 · 결제일 분산 · 구매확정 문자 중 쓸 수단.</p><div class="n">30분 · 3회차에 이미 채웠으면 10분으로: "10월 첫 주 실제 입출금 vs 달력" 대조로 대체.</div></div></div>
+    <div class="row"><div class="tm">0:50</div><div class="bd"><h4>손절 규칙표 실행 <span class="pill">3회차 이월</span></h4><p>14품목 표에 사입일·사입액·주차·누적 판매 → "3주 · __개 미만" 빈칸 숫자 확정 → 덤핑 대상 중 이번 주 실행 1개 → <b>회수된 돈을 어디에 넣을지</b>(주간 리뷰 10개↑ 상품).</p><div class="n">25분 · 표를 이미 채웠으면 실행 결과 확인 + 회수 자금 배치로 대체. 회전 시뮬레이션을 실제 돈으로 처음 돌리는 순간.</div></div></div>
+    <div class="row rest"><div class="tm">1:15</div><div class="bd"><h4>휴식</h4><p>세션에도 휴식을 넣습니다. 2회차에서 가르친 것을 세션 자체에 적용합니다.</p><div class="n">10분 · 발주 화면도, 카톡도 열지 않습니다.</div></div></div>
+    <div class="row"><div class="tm">1:25</div><div class="bd"><h4>기록 시트 통계 리뷰</h4><p>통계 탭 세 신호 — 휴식 비율 &lt;15% / 멍때림+망상 ≥6 / 활동별 시간당 건수 — 중 켜진 것 하나 → 내일 근무표를 운영자 입장에서 조정.</p><div class="n">15분 · 안 적었으면 어제 하루를 그 자리에서 24칸에 같이 적습니다. 숙제는 혼자가 아니라 여기서.</div></div></div>
+    <div class="row"><div class="tm">1:40</div><div class="bd"><h4>방화벽 확인 <span class="pill">3회차 이월</span></h4><p>표준 답변 폰 메모 저장 · 이관 가능 CS 3종(송장 조회·배송 문의·단순 교환) · 쿠쿠 담당자 문의 발송 여부.</p><div class="n">10분 · 안 됐으면 세션 중 즉시 발송. 미루면 또 한 달 갑니다.</div></div></div>
+    <div class="row"><div class="tm">1:50</div><div class="bd"><h4>객단가 세팅 + 67번</h4><p>크로스셀 3 · 업셀 1 · 묶음 옵션 1을 스토어에서 같이 설정. 마지막 질문: 열흘 동안 "이건 나한테 사는 이유가 되겠다" 싶은 순간이 있었습니까.</p><div class="n">10분 · 객단가는 3회차에 했으면 스킵. 67번은 매 회차 마지막에 항상.</div></div></div>
+  </div>
+</section>
+
+<section class="lesson" id="new">
+  <div class="kicker">What's new</div>
+  <h2>이번 회차에 새로 들어온 것</h2>
+  <p class="lead">3회차에 없던 네 가지입니다.</p>
+  <div class="card"><h4>① 9월 결산 한 줄</h4><p style="margin:0;font-size:15px">"9월에 남은 돈 얼마." 매출이 아니라 남은 돈을 대표님 입으로 말하는 것. 1회차에서 "돈은 쓰기 위해 버는 것"이라고 했습니다. 쓸 수 있는 돈이 얼마였는지가 9월의 답입니다.</p></div>
+  <div class="card"><h4>② 10월 첫 주 실적 vs 달력</h4><p style="margin:0;font-size:15px">달력이 예측한 대로 돈이 들어오고 나갔는지 대조합니다. 맞았으면 달력을 믿고, 틀렸으면 어디가 틀렸는지 고칩니다. 예측을 검증하지 않은 표는 장식입니다.</p></div>
+  <div class="card"><h4>③ 손절 회수 자금의 재배치</h4><p style="margin:0;font-size:15px">덤핑으로 돌아온 돈을 어느 상품에 넣을지. 2회차 회전 원에서 "재고 칸에 멈춘 돈을 도는 상품으로 옮긴다"고 했습니다. 오늘 그것을 실제 돈으로 합니다. 기준은 두 줄 — 주간 리뷰 10개 이상, 가용 자본의 10% 이내.</p></div>
+  <div class="card"><h4>④ 세션 안의 휴식 10분</h4><p style="margin:0;font-size:15px">"지치기 전에 쉰다"를 가르친 세션이 2시간을 내리 달리면 말과 행동이 다릅니다. 아프셨던 직후라 더 그렇습니다. 1:15에 10분 쉽니다.</p></div>
+  <div class="src"><div class="h">근거</div>
+    <p><b>루크의 원칙</b> — "매출이 아니라 남은 돈. 3,500만 매출이 아니라 그중 남은 금액." <i>(2회차 자료 레슨 1)</i> · "휴식은 정확히 휴식대로, 업무는 스프린트처럼. 마음이 힘들기 전에 쉬는 것이 경영." <i>(2회차 자료 레슨 4)</i> · "버리는 것을 정하는 것이 경영이다. 디테일을 전부 붙드는 것은 예술이지 경영이 아니다. 성향대로가 아니라 성공하는 방식대로 운영한다." <i>(2026-09-25 그룹 강의)</i></p>
+    <p><b>참고</b> — 테틀록·가드너(Philip Tetlock &amp; Dan Gardner, 2015, <i>Superforecasting</i>)는 예측 정확도가 높은 사람들의 공통점으로 "예측을 기록하고, 결과와 대조하고, 틀린 만큼 고치는 습관"을 꼽았습니다. 달력을 검증하는 10분이 그 습관입니다.</p>
+  </div>
+</section>
+
+<section class="lesson" id="carry">
+  <div class="kicker">Carried over</div>
+  <h2>3회차에서 이월된 것</h2>
+  <p class="lead">3회차가 컨디션 문제로 짧게 끝났습니다. 못 다룬 것은 사라지지 않고 여기로 옵니다. 자료는 3회차 페이지에 그대로 있습니다.</p>
+  <div class="tbl"><table>
+    <tr><th>항목</th><th>3회차 자료</th><th>4회차에서</th></tr>
+    <tr><td>현금흐름 달력</td><td>레슨 1</td><td>0:20 블록 · 채우거나 검증</td></tr>
+    <tr><td>자금 회전 시뮬레이션</td><td>레슨 2</td><td>0:50 블록 · 회수 자금 배치에 적용</td></tr>
+    <tr><td>손절 규칙표 (14품목)</td><td>레슨 3</td><td>0:50 블록 · 실행 1개</td></tr>
+    <tr><td>객단가 3종</td><td>레슨 4</td><td>1:50 블록</td></tr>
+    <tr><td>법적 위협 SOP · CS 이관 · 브랜드 문의</td><td>레슨 6</td><td>1:40 블록 · 세션 중 발송</td></tr>
+  </table></div>
+  <a class="btn" href="../../s03/lesson/">3회차 교육자료 열기</a>
+</section>
+
+<section class="lesson" id="bring">
+  <div class="kicker">Bring</div>
+  <h2>준비해 두실 것</h2>
+  <ul class="chk">
+    <li>9월 순이익 추정치 한 줄 <span class="d">매출 말고 남은 돈. 정확하지 않아도 됨</span></li>
+    <li>10월 카드 결제일 · 정산 예정일 <span class="d">카드사 앱 · 스토어 정산 화면</span></li>
+    <li>14품목 사입 목록 <span class="d">사입일 · 사입액 · 지금까지 판매 수</span></li>
+    <li>시간 기록 시트 <span class="d">적은 만큼만. 안 적었어도 옴</span></li>
+    <li>등록 트래커 최종 숫자 <span class="d">9/30 기준 누적</span></li>
+  </ul>
+  <div class="card"><h4>시간 기록 시트 (v3)</h4>
+    <a class="btn" href="https://docs.google.com/spreadsheets/d/1D2d49TpNKhFNQMYujrfH5WyviHX6ID5UezVp2jvuIYo/edit" target="_blank" rel="noopener">시트 열기</a>
+  </div>
+  <div class="dark"><div class="k">TODAY'S LAST QUESTION</div><p style="margin:0;font-size:17px;font-weight:600">열흘 동안 "이건 나한테 사는 이유가 되겠다" 싶은 순간이 있었습니까?</p><p style="margin:8px 0 0;font-size:14px;color:#a1a1a6">없어도 됩니다. 질문이 있다는 것 자체가 방향입니다.</p></div>
+  <div class="sig"><b>멘토루크 유믿음</b>원크루 · 4회차 · 2026년 10월</div>
+</section>
+
+</div></main>
+<footer>박태경 대표 1인을 위한 비공개 세션 자료입니다. 무단 공유를 삼가 주십시오.</footer>
+<script>
+(function(){
+  var el=document.getElementById('cd');
+  var t=new Date('2026-10-02T15:00:00+09:00');   // 세션 시각 — 확정되면 여기만 수정
+  var end=new Date(t.getTime()+2*3600*1000);
+  function tick(){
+    var now=new Date(), d=t-now;
+    if(now>=end){el.textContent='종료';return;}
+    if(d<=0){el.textContent='진행 중';return;}
+    var days=Math.floor(d/86400000), h=Math.floor(d%86400000/3600000), m=Math.floor(d%3600000/60000), s=Math.floor(d%60000/1000);
+    el.textContent=(days>0?days+'일 ':'')+(days>0||h>0?h+'시간 ':'')+m+'분 '+s+'초 남음';
+  }
+  tick(); setInterval(tick,1000);
+})();
+</script>
+</body>
+</html>
