@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>4회차 컨설팅 정리 · 3개월 성적표와 10월의 방향</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d1d1f;--gray:#6e6e73;--card:#f5f5f7;--line:#d2d2d7;--blue:#0071e3;--bg:#fff;--soft:#e8f0fe;--green:#1f9d55;--orange:#ff9f0a;--red:#ff375f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#f5f5f7;--gray:#a1a1a6;--card:#1c1c1e;--line:#3a3a3c;--blue:#0a84ff;--bg:#000;--soft:#0f1e3a;--green:#30d158}}
+:root[data-theme="dark"]{--ink:#f5f5f7;--gray:#a1a1a6;--card:#1c1c1e;--line:#3a3a3c;--blue:#0a84ff;--bg:#000;--soft:#0f1e3a;--green:#30d158}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif;font-size:16.5px;line-height:1.9;word-break:keep-all;-webkit-font-smoothing:antialiased}
+.hero{background:#000;color:#fff;padding:72px 22px 44px;position:relative;overflow:hidden}
+.hero .orb{position:absolute;right:-140px;top:-140px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#2c5cff 0%,#0a84ff 25%,rgba(10,132,255,0) 65%);opacity:.55}
+.wrap{max-width:620px;margin:0 auto;position:relative}
+.tag{font-size:11px;letter-spacing:.28em;color:#86868b;text-transform:uppercase}
+.hero h1{font-size:clamp(30px,8vw,44px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin:20px 0 12px}
+.hero h1 span{color:#0a84ff}
+.hero .sub{font-size:clamp(17px,4.6vw,21px);font-weight:500;color:#fff;margin:-4px 0 14px;letter-spacing:-.01em}
+.hero p{color:#a1a1a6;font-weight:300;font-size:16px;margin:0}
+.hero .meta{margin-top:24px;font-size:12px;color:#86868b;line-height:1.8}.hero .meta b{color:#fff;font-weight:500}
+.big{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:26px}
+.big>div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:12px 14px}
+.big .n{font-size:11px;letter-spacing:.12em;color:#86868b;text-transform:uppercase}
+.big .v{font-size:clamp(20px,5.5vw,26px);font-weight:700;color:#fff;letter-spacing:-.02em;margin-top:2px}
+.big .v small{display:block;font-size:12px;font-weight:400;color:#a1a1a6;margin-top:2px}
+nav.toc{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 22px;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}
+nav.toc a{display:inline-block;font-size:13px;color:var(--gray);text-decoration:none;padding:6px 12px;border-radius:999px;margin-right:4px;background:var(--card)}
+nav.toc a b{color:var(--blue);font-weight:600;margin-right:4px}
+main{padding:36px 22px 80px}
+section.lesson{margin-bottom:0;padding:56px 0 72px;border-top:1px solid var(--line)}
+section.lesson:first-of-type{border-top:0;padding-top:24px}
+.lnum{font-size:clamp(44px,14vw,72px);margin-top:4px;font-weight:700;letter-spacing:-.04em;line-height:1;color:var(--blue)}
+.kicker{font-size:11px;letter-spacing:.25em;color:var(--blue);text-transform:uppercase;font-weight:500;margin:10px 0 6px}
+h2{font-size:clamp(23px,6.5vw,30px);font-weight:700;letter-spacing:-.02em;line-height:1.2;margin:0 0 10px}
+.lead{font-size:16px;font-weight:300;color:var(--gray);margin:0 0 18px}
+h3{font-size:18px;font-weight:600;margin:40px 0 12px;letter-spacing:-.01em}
+p{margin:0 0 16px}b{font-weight:600}
+ul{padding-left:18px;margin:0 0 12px}li{margin-bottom:5px}
+.card{background:var(--card);border-radius:16px;padding:20px 22px;margin:24px 0}
+.card h4{margin:0 0 6px;font-size:15px;font-weight:600}
+.dark{background:#000;color:#fff;border-radius:16px;padding:22px;margin:30px 0}
+.dark .k{color:#0a84ff;font-size:11px;letter-spacing:.2em;margin-bottom:6px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dark{background:#1c1c1e}}
+:root[data-theme="dark"] .dark{background:#1c1c1e}
+.tbl{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:20px 0 24px}
+table{width:100%;min-width:360px;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-weight:600;padding:9px 8px;border-bottom:1.5px solid var(--ink);font-size:13px}
+td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+td.hi{color:var(--blue);font-weight:600}
+.todo{border-left:2px solid var(--blue);padding:6px 0 6px 16px;margin:36px 0 12px}
+.todo h4{margin:0 0 6px;font-size:13px;letter-spacing:.15em;color:var(--blue);text-transform:uppercase}
+.todo ul{margin:0}.todo li{font-size:15px}
+.q{font-size:15.5px;background:var(--card);border-radius:12px;padding:14px 18px;margin:12px 0;line-height:1.75}
+.q:before{content:"Q ";color:var(--blue);font-weight:700}
+.quote{border-left:3px solid var(--blue);padding:4px 0 4px 16px;margin:18px 0;font-size:15.5px;line-height:1.8}
+.quote .who{display:block;font-size:12.5px;color:var(--gray);margin-top:4px}
+.btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;font-weight:500;font-size:14px;padding:11px 18px;border-radius:999px;margin-top:6px}
+.fig{margin:30px 0 34px}
+.fig svg{width:100%;height:auto;display:block}
+.fig .cap{font-size:13.5px;color:var(--gray);margin-top:12px;line-height:1.7}
+svg text{font-family:"Noto Sans KR",sans-serif;fill:var(--ink)}
+svg .g{fill:var(--gray)}svg .b{fill:var(--blue)}svg .bl{stroke:var(--blue)}svg .ln{stroke:var(--line)}svg .card{fill:var(--card)}svg .soft{fill:var(--soft)}svg .gr{fill:var(--green)}svg .or{fill:var(--orange)}svg .rd{fill:var(--red)}svg .w{fill:#fff}svg .ink{fill:var(--ink)}svg .bg{fill:var(--bg)}
+svg .sg{stroke:var(--gray)}svg .sgr{stroke:var(--green)}svg .sor{stroke:var(--orange)}svg .srd{stroke:var(--red)}svg .sink{stroke:var(--ink)}
+.pill{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;background:var(--soft);color:var(--blue);font-weight:600;margin-left:6px;vertical-align:middle}
+.pill.new{background:#e6f4ea;color:#1f9d55}
+.pill.luke{background:#fff3e0;color:#b45309}
+footer{border-top:1px solid var(--line);padding:24px 22px 44px;font-size:12px;color:var(--gray);text-align:center}
+.sig{margin-top:32px}.sig b{display:block;font-size:17px}
+.sum{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.sum div{background:var(--card);border-radius:14px;padding:14px}
+.sum .n{font-size:13px;color:var(--blue);font-weight:600;letter-spacing:.05em}
+.sum .t{font-size:14px;margin-top:4px;font-weight:500}
+.chk{list-style:none;padding:0;margin:12px 0}
+.chk li{position:relative;padding:12px 0 12px 34px;border-bottom:1px solid var(--line);font-size:15.5px}
+.chk li:before{content:"";position:absolute;left:0;top:15px;width:18px;height:18px;border:1.5px solid var(--ink);border-radius:5px}
+.chk li .d{display:block;font-size:13px;color:var(--gray);margin-top:2px}
+.src{background:var(--card);border-left:3px solid var(--blue);border-radius:0 12px 12px 0;padding:12px 16px;margin:18px 0;font-size:14px;line-height:1.7}
+.src .h{font-size:11px;letter-spacing:.18em;color:var(--blue);font-weight:600;text-transform:uppercase;margin-bottom:6px}
+.src p{margin:0 0 6px}.src p:last-child{margin:0}
+.src i{color:var(--gray);font-style:normal;font-size:13px}
+.tl{margin:18px 0}
+.tl .row{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.tl .row:last-child{border-bottom:1px solid var(--line)}
+.tl .tm{flex:none;width:52px;font-size:12.5px;color:var(--blue);font-weight:600;padding-top:3px}
+.tl .bd h4{margin:0 0 4px;font-size:15.5px;font-weight:600}
+.tl .bd p{margin:0;font-size:14.5px}
+.tl .bd .n{margin-top:4px;font-size:13px;color:var(--gray)}
+.wk{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin:16px 0}
+.wk div{background:var(--card);border-radius:10px;padding:8px 6px;font-size:11.5px;line-height:1.5;min-height:96px}
+.wk div b{display:block;font-size:12px;color:var(--blue);margin-bottom:4px}
+.wk div.we b{color:var(--red)}
+@media (max-width:480px){.wk{grid-template-columns:repeat(4,1fr)}}
+.lg{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+.lg div{background:var(--card);border-radius:14px;padding:14px 16px;font-size:14px}
+.lg div b{display:block;font-size:13px;color:var(--blue);margin-bottom:4px}
+.lg div span{display:block;font-size:12.5px;color:var(--gray);margin-top:4px}
+</style>
+</head>
+<body>
+<div class="hero"><div class="orb"></div><div class="wrap">
+  <div class="tag">OneCrew · Session 04 · Review</div>
+  <h1>4회차 <span>정리</span></h1>
+  <div class="sub">3개월에 1억을 팔았습니다. 이제 10월은 두 배입니다.</div>
+  <p>9월 30일, 두 번의 통화(49분 + 73분)와 스토어 통계를 함께 봤습니다. 이 페이지는 그날의 성적표, 두 통화에서 나온 이야기, 4회차 교육자료의 요점, 그리고 다음 주에 할 일을 한 장에 모은 것입니다.</p>
+  <div class="big">
+    <div><div class="n">3개월 결제금액</div><div class="v">1.03억<small>7/1~9/29</small></div></div>
+    <div><div class="n">결제자</div><div class="v">610명<small>1인당 16.6만</small></div></div>
+    <div><div class="n">환불</div><div class="v">12.5%<small>74건 · 1,289만</small></div></div>
+    <div><div class="n">하루 최고 결제자</div><div class="v">32명<small>9/17 목</small></div></div>
+  </div>
+  <div class="meta"><b>박태경 대표</b> 귀하 · 2026년 9월 30일 · 4회차 (통화 2회)<br>작성 · 멘토루크 유믿음</div>
+</div></div>
+
+<nav class="toc">
+  <a href="#score"><b>1</b>3개월 성적표</a><a href="#today"><b>2</b>오늘의 스토어</a><a href="#call1"><b>3</b>통화 ① 백문백답</a><a href="#call2"><b>4</b>통화 ② 운영</a><a href="#lessons"><b>5</b>교육자료 요점</a><a href="#next"><b>6</b>다음 주</a><a href="#ref"><b>·</b>출처</a>
+</nav>
+
+<main><div class="wrap">
+
+<div class="card" style="margin-top:0"><h4>오늘의 한 줄</h4>
+<p style="margin:0;font-size:15px">"3개월에 억 단위로 판매를 해보셨네요." — "저도 이건 처음 봤어요." 대표님이 본인 숫자를 처음 본 날입니다. 이 숫자는 우연이 아니라 구조에서 나왔고, 구조가 멈춘 곳(등록·솎아내기)도 그래프에 그대로 찍혀 있습니다. <b>멈춘 곳을 다시 돌리면 10월은 두 배가 됩니다.</b> 네이버 안에서 대표님 스토어는 이미 "레벨 50"이니까요.</p></div>
+
+<!-- ===== 1. SCORE ===== -->
+<section class="lesson" id="score">
+  <div class="lnum">01</div>
+  <div class="kicker">Scorecard · 7/1 → 9/29</div>
+  <h2>3개월 성적표 —<br>숫자가 말하는 것</h2>
+  <p class="lead">스토어 개설 7월 30일. 실질 영업 2개월에 결제금액 1억 332만 원. 8월 약 3,600만, 9월 약 5,600만(대표님 추정). 모바일 74%. 이 숫자를 먼저 인정하고 시작합니다.</p>
+
+  <div class="fig"><svg viewBox="0 0 600 314" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="9월 13일부터 29일까지 일별 결제금액">
+<text x="0" y="18" font-size="15" font-weight="600">일별 결제금액 · 9/13 → 9/29 (통계 표 그대로)</text>
+<line x1="44" y1="250" x2="600" y2="250" class="ln" stroke-width="1"/>
+<text x="38" y="254" font-size="10.5" text-anchor="end" class="g">0백만</text>
+<line x1="44" y1="203" x2="600" y2="203" class="ln" stroke-width="1"/>
+<text x="38" y="207" font-size="10.5" text-anchor="end" class="g">1백만</text>
+<line x1="44" y1="157" x2="600" y2="157" class="ln" stroke-width="1"/>
+<text x="38" y="161" font-size="10.5" text-anchor="end" class="g">2백만</text>
+<line x1="44" y1="110" x2="600" y2="110" class="ln" stroke-width="1"/>
+<text x="38" y="114" font-size="10.5" text-anchor="end" class="g">3백만</text>
+<line x1="44" y1="63" x2="600" y2="63" class="ln" stroke-width="1"/>
+<text x="38" y="67" font-size="10.5" text-anchor="end" class="g">4백만</text>
+<rect x="398" y="40" width="130" height="210" class="soft" opacity=".6"/>
+<text x="463" y="54" font-size="10.5" text-anchor="middle" class="b" font-weight="600">추석 연휴</text>
+<rect x="44.0" y="190.4" width="26.5" height="59.6" rx="3" class="b"/>
+<text x="57.2" y="186" font-size="9.5" text-anchor="middle" class="g">1.3</text>
+<text x="57.2" y="264" font-size="9.5" text-anchor="middle" class="rd">13</text>
+<text x="57.2" y="276" font-size="8.5" text-anchor="middle" class="g">일</text>
+<rect x="76.5" y="119.8" width="26.5" height="130.2" rx="3" class="b"/>
+<text x="89.7" y="116" font-size="9.5" text-anchor="middle" class="g">2.8</text>
+<text x="89.7" y="264" font-size="9.5" text-anchor="middle" class="g">14</text>
+<text x="89.7" y="276" font-size="8.5" text-anchor="middle" class="g">월</text>
+<rect x="108.9" y="216.2" width="26.5" height="33.8" rx="3" class="b"/>
+<text x="122.2" y="264" font-size="9.5" text-anchor="middle" class="g">15</text>
+<text x="122.2" y="276" font-size="8.5" text-anchor="middle" class="g">화</text>
+<rect x="141.4" y="125.0" width="26.5" height="125.0" rx="3" class="b"/>
+<text x="154.6" y="121" font-size="9.5" text-anchor="middle" class="g">2.7</text>
+<text x="154.6" y="264" font-size="9.5" text-anchor="middle" class="g">16</text>
+<text x="154.6" y="276" font-size="8.5" text-anchor="middle" class="g">수</text>
+<rect x="173.9" y="58.1" width="26.5" height="191.9" rx="3" class="b"/>
+<text x="187.1" y="54" font-size="9.5" text-anchor="middle" class="g">4.1</text>
+<text x="187.1" y="264" font-size="9.5" text-anchor="middle" class="g">17</text>
+<text x="187.1" y="276" font-size="8.5" text-anchor="middle" class="g">목</text>
+<rect x="206.4" y="102.7" width="26.5" height="147.3" rx="3" class="b"/>
+<text x="219.6" y="99" font-size="9.5" text-anchor="middle" class="g">3.2</text>
+<text x="219.6" y="264" font-size="9.5" text-anchor="middle" class="g">18</text>
+<text x="219.6" y="276" font-size="8.5" text-anchor="middle" class="g">금</text>
+<rect x="238.8" y="134.8" width="26.5" height="115.2" rx="3" class="b"/>
+<text x="252.1" y="131" font-size="9.5" text-anchor="middle" class="g">2.5</text>
+<text x="252.1" y="264" font-size="9.5" text-anchor="middle" class="rd">19</text>
+<text x="252.1" y="276" font-size="8.5" text-anchor="middle" class="g">토</text>
+<rect x="271.3" y="179.0" width="26.5" height="71.0" rx="3" class="b"/>
+<text x="284.5" y="175" font-size="9.5" text-anchor="middle" class="g">1.5</text>
+<text x="284.5" y="264" font-size="9.5" text-anchor="middle" class="rd">20</text>
+<text x="284.5" y="276" font-size="8.5" text-anchor="middle" class="g">일</text>
+<rect x="303.8" y="162.5" width="26.5" height="87.5" rx="3" class="b"/>
+<text x="317.0" y="158" font-size="9.5" text-anchor="middle" class="g">1.9</text>
+<text x="317.0" y="264" font-size="9.5" text-anchor="middle" class="g">21</text>
+<text x="317.0" y="276" font-size="8.5" text-anchor="middle" class="g">월</text>
+<rect x="336.2" y="74.1" width="26.5" height="175.9" rx="3" class="b"/>
+<text x="349.5" y="70" font-size="9.5" text-anchor="middle" class="g">3.8</text>
+<text x="349.5" y="264" font-size="9.5" text-anchor="middle" class="g">22</text>
+<text x="349.5" y="276" font-size="8.5" text-anchor="middle" class="g">화</text>
+<rect x="368.7" y="238.4" width="26.5" height="11.6" rx="3" class="b"/>
+<text x="381.9" y="264" font-size="9.5" text-anchor="middle" class="g">23</text>
+<text x="381.9" y="276" font-size="8.5" text-anchor="middle" class="g">수</text>
+<rect x="401.2" y="232.0" width="26.5" height="18.0" rx="3" class="g"/>
+<text x="414.4" y="264" font-size="9.5" text-anchor="middle" class="g">24</text>
+<text x="414.4" y="276" font-size="8.5" text-anchor="middle" class="g">목</text>
+<rect x="433.6" y="222.5" width="26.5" height="27.5" rx="3" class="g"/>
+<text x="446.9" y="264" font-size="9.5" text-anchor="middle" class="g">25</text>
+<text x="446.9" y="276" font-size="8.5" text-anchor="middle" class="g">금</text>
+<rect x="466.1" y="207.3" width="26.5" height="42.7" rx="3" class="g"/>
+<text x="479.4" y="264" font-size="9.5" text-anchor="middle" class="rd">26</text>
+<text x="479.4" y="276" font-size="8.5" text-anchor="middle" class="g">토</text>
+<rect x="498.6" y="178.2" width="26.5" height="71.8" rx="3" class="g"/>
+<text x="511.8" y="174" font-size="9.5" text-anchor="middle" class="g">1.5</text>
+<text x="511.8" y="264" font-size="9.5" text-anchor="middle" class="rd">27</text>
+<text x="511.8" y="276" font-size="8.5" text-anchor="middle" class="g">일</text>
+<rect x="531.1" y="133.4" width="26.5" height="116.6" rx="3" class="b"/>
+<text x="544.3" y="129" font-size="9.5" text-anchor="middle" class="g">2.5</text>
+<text x="544.3" y="264" font-size="9.5" text-anchor="middle" class="g">28</text>
+<text x="544.3" y="276" font-size="8.5" text-anchor="middle" class="g">월</text>
+<rect x="563.5" y="216.7" width="26.5" height="33.3" rx="3" class="b"/>
+<text x="576.8" y="264" font-size="9.5" text-anchor="middle" class="g">29</text>
+<text x="576.8" y="276" font-size="8.5" text-anchor="middle" class="g">화</text>
+<text x="0" y="294" font-size="11.5" class="g">연휴 전 열흘 하루 평균 244만 → 연휴 나흘 53만 → 연휴 뒤 사흘 158만.</text>
+<text x="0" y="310" font-size="11.5" class="g">9/29 화요일 71만 — "연휴 뒤 회복이 더디다"는 바로 그 자리입니다.</text>
+</svg></div>
+
+  <h3>루크의 코멘트 — 그래프를 보면서 한 말</h3>
+  <div class="quote">"연휴 기간에 많이 선방하셨네요. 명절 때 쓸 돈 때문에 일부러 안 쓰는 경향도 있는데 이 정도면 선방한 겁니다."<span class="who">— 통화 ① 43분 · 대표님: "끝나고가 좀 잘 안 되는 것 같습니다"</span></div>
+  <div class="quote">"큰 행사가 한 번 지나가면 굉장히 다른 분위기예요. 심리적인 변화가 커요. 그리고 10월이면 겨울 상품 준비가 은근히 많이 됩니다. 업계에서 광고비가 겨울 상품으로 들어가기 시작하거든요. 상품 기준이 달라지는 시즌에 온 겁니다."<span class="who">— 통화 ① 43분</span></div>
+  <div class="quote">"이거는 객단가가 낮아진 걸로 보이고… 그래도 3개월에 억 단위로 판매를 해보셨네요."<span class="who">— 통화 ① 45분</span></div>
+
+  <div class="fig"><svg viewBox="0 0 600 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="연휴 전·중·후 비교">
+<text x="0" y="18" font-size="15" font-weight="600">연휴 전 · 연휴 · 연휴 뒤 — 하루 평균으로 비교</text>
+<rect x="0" y="40" width="188" height="170" rx="14" class="card"/>
+<text x="94" y="66" font-size="12.5" text-anchor="middle" font-weight="700">연휴 전 열흘</text>
+<text x="94" y="84" font-size="10.5" text-anchor="middle" class="g">9/13~9/22</text>
+<text x="94" y="122" font-size="26" text-anchor="middle" font-weight="700" class="b">244만</text>
+<text x="94" y="142" font-size="10.5" text-anchor="middle" class="g">하루 결제금액</text>
+<text x="94" y="172" font-size="12" text-anchor="middle">결제자 15명 · 1인당 16.6만</text>
+<text x="94" y="196" font-size="10.5" text-anchor="middle" class="g">기준선</text>
+<rect x="200" y="40" width="188" height="170" rx="14" class="card"/>
+<text x="294" y="66" font-size="12.5" text-anchor="middle" font-weight="700">추석 연휴 나흘</text>
+<text x="294" y="84" font-size="10.5" text-anchor="middle" class="g">9/23~9/26</text>
+<text x="294" y="122" font-size="26" text-anchor="middle" font-weight="700" class="g">53만</text>
+<text x="294" y="142" font-size="10.5" text-anchor="middle" class="g">하루 결제금액</text>
+<text x="294" y="172" font-size="12" text-anchor="middle">결제자 7명 · 1인당 7.6만</text>
+<text x="294" y="196" font-size="10.5" text-anchor="middle" class="g">−78% · 선방</text>
+<rect x="400" y="40" width="188" height="170" rx="14" class="card"/>
+<text x="494" y="66" font-size="12.5" text-anchor="middle" font-weight="700">연휴 뒤 사흘</text>
+<text x="494" y="84" font-size="10.5" text-anchor="middle" class="g">9/27~9/29</text>
+<text x="494" y="122" font-size="26" text-anchor="middle" font-weight="700" class="or">158만</text>
+<text x="494" y="142" font-size="10.5" text-anchor="middle" class="g">하루 결제금액</text>
+<text x="494" y="172" font-size="12" text-anchor="middle">결제자 12명 · 1인당 13.2만</text>
+<text x="494" y="196" font-size="10.5" text-anchor="middle" class="g">−35% · 회복 중</text>
+</svg>
+  <div class="cap">"선방"의 근거: 연휴 나흘 동안 하루 53만 원, 결제자 7명. 0이 아니었습니다. 연휴 뒤 사흘은 158만으로 올라왔지만 아직 연휴 전(244만)의 65% 수준입니다.</div></div>
+
+  <div class="fig"><svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="일별 결제자수와 결제당 금액">
+<text x="0" y="18" font-size="15" font-weight="600">결제자 수(막대) · 1인당 결제금액(점선)</text>
+<line x1="44" y1="190" x2="600" y2="190" class="ln" stroke-width="1"/>
+<text x="38" y="194" font-size="10.5" text-anchor="end" class="g">0명</text>
+<line x1="44" y1="147" x2="600" y2="147" class="ln" stroke-width="1"/>
+<text x="38" y="151" font-size="10.5" text-anchor="end" class="g">10명</text>
+<line x1="44" y1="104" x2="600" y2="104" class="ln" stroke-width="1"/>
+<text x="38" y="108" font-size="10.5" text-anchor="end" class="g">20명</text>
+<line x1="44" y1="61" x2="600" y2="61" class="ln" stroke-width="1"/>
+<text x="38" y="65" font-size="10.5" text-anchor="end" class="g">30명</text>
+<rect x="44" y="121" width="556" height="5" class="or" opacity=".35"/>
+<text x="600" y="117" font-size="10" text-anchor="end" class="or" font-weight="600">15~16명 · 지금 머무는 평균</text>
+<rect x="44.0" y="130.0" width="26.5" height="60.0" rx="3" class="b"/>
+<text x="57.2" y="126" font-size="9.5" text-anchor="middle" class="g">14</text>
+<text x="57.2" y="204" font-size="9.5" text-anchor="middle" class="g">13</text>
+<rect x="76.5" y="104.3" width="26.5" height="85.7" rx="3" class="b"/>
+<text x="89.7" y="100" font-size="9.5" text-anchor="middle" class="g">20</text>
+<text x="89.7" y="204" font-size="9.5" text-anchor="middle" class="g">14</text>
+<rect x="108.9" y="164.3" width="26.5" height="25.7" rx="3" class="b"/>
+<text x="122.2" y="160" font-size="9.5" text-anchor="middle" class="g">6</text>
+<text x="122.2" y="204" font-size="9.5" text-anchor="middle" class="g">15</text>
+<rect x="141.4" y="138.6" width="26.5" height="51.4" rx="3" class="b"/>
+<text x="154.6" y="135" font-size="9.5" text-anchor="middle" class="g">12</text>
+<text x="154.6" y="204" font-size="9.5" text-anchor="middle" class="g">16</text>
+<rect x="173.9" y="52.9" width="26.5" height="137.1" rx="3" class="b"/>
+<text x="187.1" y="49" font-size="9.5" text-anchor="middle" class="g">32</text>
+<text x="187.1" y="204" font-size="9.5" text-anchor="middle" class="g">17</text>
+<rect x="206.4" y="125.7" width="26.5" height="64.3" rx="3" class="b"/>
+<text x="219.6" y="122" font-size="9.5" text-anchor="middle" class="g">15</text>
+<text x="219.6" y="204" font-size="9.5" text-anchor="middle" class="g">18</text>
+<rect x="238.8" y="134.3" width="26.5" height="55.7" rx="3" class="b"/>
+<text x="252.1" y="130" font-size="9.5" text-anchor="middle" class="g">13</text>
+<text x="252.1" y="204" font-size="9.5" text-anchor="middle" class="g">19</text>
+<rect x="271.3" y="142.9" width="26.5" height="47.1" rx="3" class="b"/>
+<text x="284.5" y="139" font-size="9.5" text-anchor="middle" class="g">11</text>
+<text x="284.5" y="204" font-size="9.5" text-anchor="middle" class="g">20</text>
+<rect x="303.8" y="151.4" width="26.5" height="38.6" rx="3" class="b"/>
+<text x="317.0" y="147" font-size="9.5" text-anchor="middle" class="g">9</text>
+<text x="317.0" y="204" font-size="9.5" text-anchor="middle" class="g">21</text>
+<rect x="336.2" y="125.7" width="26.5" height="64.3" rx="3" class="b"/>
+<text x="349.5" y="122" font-size="9.5" text-anchor="middle" class="g">15</text>
+<text x="349.5" y="204" font-size="9.5" text-anchor="middle" class="g">22</text>
+<rect x="368.7" y="160.0" width="26.5" height="30.0" rx="3" class="b"/>
+<text x="381.9" y="156" font-size="9.5" text-anchor="middle" class="g">7</text>
+<text x="381.9" y="204" font-size="9.5" text-anchor="middle" class="g">23</text>
+<rect x="401.2" y="181.4" width="26.5" height="8.6" rx="3" class="g"/>
+<text x="414.4" y="177" font-size="9.5" text-anchor="middle" class="g">2</text>
+<text x="414.4" y="204" font-size="9.5" text-anchor="middle" class="g">24</text>
+<rect x="433.6" y="147.1" width="26.5" height="42.9" rx="3" class="g"/>
+<text x="446.9" y="143" font-size="9.5" text-anchor="middle" class="g">10</text>
+<text x="446.9" y="204" font-size="9.5" text-anchor="middle" class="g">25</text>
+<rect x="466.1" y="151.4" width="26.5" height="38.6" rx="3" class="g"/>
+<text x="479.4" y="147" font-size="9.5" text-anchor="middle" class="g">9</text>
+<text x="479.4" y="204" font-size="9.5" text-anchor="middle" class="g">26</text>
+<rect x="498.6" y="134.3" width="26.5" height="55.7" rx="3" class="g"/>
+<text x="511.8" y="130" font-size="9.5" text-anchor="middle" class="g">13</text>
+<text x="511.8" y="204" font-size="9.5" text-anchor="middle" class="g">27</text>
+<rect x="531.1" y="121.4" width="26.5" height="68.6" rx="3" class="b"/>
+<text x="544.3" y="117" font-size="9.5" text-anchor="middle" class="g">16</text>
+<text x="544.3" y="204" font-size="9.5" text-anchor="middle" class="g">28</text>
+<rect x="563.5" y="160.0" width="26.5" height="30.0" rx="3" class="b"/>
+<text x="576.8" y="156" font-size="9.5" text-anchor="middle" class="g">7</text>
+<text x="576.8" y="204" font-size="9.5" text-anchor="middle" class="g">29</text>
+<path d="M57.2,137.4 L89.7,109.5 L122.2,120.4 L154.6,61.2 L187.1,115.8 L219.6,68.6 L252.1,80.4 L284.5,110.2 L317.0,69.7 L349.5,45.0 L381.9,169.5 L414.4,79.0 L446.9,156.0 L479.4,131.3 L511.8,121.7 L544.3,99.9 L576.8,131.2" fill="none" class="sink" stroke-width="1.5" stroke-dasharray="4 3"/>
+<circle cx="57.2" cy="137.4" r="2.5" class="ink"/>
+<circle cx="89.7" cy="109.5" r="2.5" class="ink"/>
+<circle cx="122.2" cy="120.4" r="2.5" class="ink"/>
+<circle cx="154.6" cy="61.2" r="2.5" class="ink"/>
+<circle cx="187.1" cy="115.8" r="2.5" class="ink"/>
+<circle cx="219.6" cy="68.6" r="2.5" class="ink"/>
+<circle cx="252.1" cy="80.4" r="2.5" class="ink"/>
+<circle cx="284.5" cy="110.2" r="2.5" class="ink"/>
+<circle cx="317.0" cy="69.7" r="2.5" class="ink"/>
+<circle cx="349.5" cy="45.0" r="2.5" class="ink"/>
+<circle cx="381.9" cy="169.5" r="2.5" class="ink"/>
+<circle cx="414.4" cy="79.0" r="2.5" class="ink"/>
+<circle cx="446.9" cy="156.0" r="2.5" class="ink"/>
+<circle cx="479.4" cy="131.3" r="2.5" class="ink"/>
+<circle cx="511.8" cy="121.7" r="2.5" class="ink"/>
+<circle cx="544.3" cy="99.9" r="2.5" class="ink"/>
+<circle cx="576.8" cy="131.2" r="2.5" class="ink"/>
+<text x="0" y="232" font-size="11.5" class="g">9/17 32명 — 네이버가 한 번 열어준 문. 연휴가 끼어 못 이어받고 15~16명에 머묾.</text>
+<text x="0" y="250" font-size="11.5" class="g">점선(1인당 금액) 9/22 25만 → 9/29 10만 = "객단가가 낮아진 걸로 보인다"의 근거.</text>
+</svg></div>
+
+  <div class="quote">"주문 건수가 지금 벽을 맞이한 것 같긴 해요. 21, 23까지 왔다가 32까지 한 번 쭉 올라갔잖아요. 네이버가 32~33건까지 기회를 한 번 열어줬는데 마침 연휴가 껴서 이어받지 못한 경우예요. 지금 15, 16이 평균처럼 보이잖아요. 이번 주부터 관리해 주시면 올라갈 거라고 예상합니다."<span class="who">— 통화 ① 47분</span></div>
+
+  <div class="fig"><svg viewBox="0 0 600 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="일별 환불 비율">
+<text x="0" y="18" font-size="15" font-weight="600">일별 환불 비율 (결제금액 대비)</text>
+<line x1="44" y1="170" x2="600" y2="170" class="ln" stroke-width="1"/>
+<text x="38" y="174" font-size="10.5" text-anchor="end" class="g">0%</text>
+<line x1="44" y1="127" x2="600" y2="127" class="ln" stroke-width="1"/>
+<text x="38" y="131" font-size="10.5" text-anchor="end" class="g">20%</text>
+<line x1="44" y1="83" x2="600" y2="83" class="ln" stroke-width="1"/>
+<text x="38" y="87" font-size="10.5" text-anchor="end" class="g">40%</text>
+<line x1="44" y1="40" x2="600" y2="40" class="ln" stroke-width="1"/>
+<text x="38" y="44" font-size="10.5" text-anchor="end" class="g">60%</text>
+<line x1="44" y1="143" x2="600" y2="143" class="srd" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="48" y="139" font-size="10" class="rd" font-weight="600">3개월 평균 12.5%</text>
+<rect x="44.0" y="165.1" width="26.5" height="4.9" rx="3" class="g" opacity=".85"/>
+<text x="57.2" y="161" font-size="9.5" text-anchor="middle" class="g">2</text>
+<text x="57.2" y="184" font-size="9.5" text-anchor="middle" class="g">13</text>
+<rect x="76.5" y="170.0" width="26.5" height="1.0" rx="3" class="g" opacity=".85"/>
+<text x="89.7" y="184" font-size="9.5" text-anchor="middle" class="g">14</text>
+<rect x="108.9" y="55.1" width="26.5" height="114.9" rx="3" class="rd" opacity=".85"/>
+<text x="122.2" y="51" font-size="9.5" text-anchor="middle" class="g">53</text>
+<text x="122.2" y="184" font-size="9.5" text-anchor="middle" class="g">15</text>
+<rect x="141.4" y="170.0" width="26.5" height="1.0" rx="3" class="g" opacity=".85"/>
+<text x="154.6" y="184" font-size="9.5" text-anchor="middle" class="g">16</text>
+<rect x="173.9" y="144.7" width="26.5" height="25.3" rx="3" class="or" opacity=".85"/>
+<text x="187.1" y="141" font-size="9.5" text-anchor="middle" class="g">12</text>
+<text x="187.1" y="184" font-size="9.5" text-anchor="middle" class="g">17</text>
+<rect x="206.4" y="149.4" width="26.5" height="20.6" rx="3" class="g" opacity=".85"/>
+<text x="219.6" y="145" font-size="9.5" text-anchor="middle" class="g">9</text>
+<text x="219.6" y="184" font-size="9.5" text-anchor="middle" class="g">18</text>
+<rect x="238.8" y="156.0" width="26.5" height="14.0" rx="3" class="g" opacity=".85"/>
+<text x="252.1" y="152" font-size="9.5" text-anchor="middle" class="g">6</text>
+<text x="252.1" y="184" font-size="9.5" text-anchor="middle" class="g">19</text>
+<rect x="271.3" y="121.4" width="26.5" height="48.6" rx="3" class="rd" opacity=".85"/>
+<text x="284.5" y="117" font-size="9.5" text-anchor="middle" class="g">22</text>
+<text x="284.5" y="184" font-size="9.5" text-anchor="middle" class="g">20</text>
+<rect x="303.8" y="146.2" width="26.5" height="23.8" rx="3" class="or" opacity=".85"/>
+<text x="317.0" y="142" font-size="9.5" text-anchor="middle" class="g">11</text>
+<text x="317.0" y="184" font-size="9.5" text-anchor="middle" class="g">21</text>
+<rect x="336.2" y="114.4" width="26.5" height="55.6" rx="3" class="rd" opacity=".85"/>
+<text x="349.5" y="110" font-size="9.5" text-anchor="middle" class="g">26</text>
+<text x="349.5" y="184" font-size="9.5" text-anchor="middle" class="g">22</text>
+<rect x="368.7" y="129.3" width="26.5" height="40.7" rx="3" class="or" opacity=".85"/>
+<text x="381.9" y="125" font-size="9.5" text-anchor="middle" class="g">19</text>
+<text x="381.9" y="184" font-size="9.5" text-anchor="middle" class="g">23</text>
+<rect x="401.2" y="170.0" width="26.5" height="1.0" rx="3" class="g" opacity=".85"/>
+<text x="414.4" y="184" font-size="9.5" text-anchor="middle" class="g">24</text>
+<rect x="433.6" y="170.0" width="26.5" height="1.0" rx="3" class="g" opacity=".85"/>
+<text x="446.9" y="184" font-size="9.5" text-anchor="middle" class="g">25</text>
+<rect x="466.1" y="170.0" width="26.5" height="1.0" rx="3" class="g" opacity=".85"/>
+<text x="479.4" y="184" font-size="9.5" text-anchor="middle" class="g">26</text>
+<rect x="498.6" y="158.7" width="26.5" height="11.3" rx="3" class="g" opacity=".85"/>
+<text x="511.8" y="155" font-size="9.5" text-anchor="middle" class="g">5</text>
+<text x="511.8" y="184" font-size="9.5" text-anchor="middle" class="g">27</text>
+<rect x="531.1" y="143.1" width="26.5" height="26.9" rx="3" class="or" opacity=".85"/>
+<text x="544.3" y="139" font-size="9.5" text-anchor="middle" class="g">12</text>
+<text x="544.3" y="184" font-size="9.5" text-anchor="middle" class="g">28</text>
+<rect x="563.5" y="170.0" width="26.5" height="1.0" rx="3" class="g" opacity=".85"/>
+<text x="576.8" y="184" font-size="9.5" text-anchor="middle" class="g">29</text>
+<text x="0" y="206" font-size="11.5" class="g">9/15 53% · 9/22 26% · 9/20 22% — 며칠에 몰림. 위탁 공급사 취소가 찍힌 날일 가능성.</text>
+<text x="0" y="222" font-size="11.5" class="b" font-weight="600">3개월 환불 1,289만(74건). 절반만 막아도 월 순이익 200만이 붙습니다.</text>
+</svg></div>
+
+  <h3>왜 멈췄는가 — 루크의 진단 순서</h3>
+  <p>매출 관리는 복잡하지 않습니다. 네 가지를 위에서 아래로 확인하면 됩니다. 넷이 다 돌고 있으면 우상향 구조는 완성된 것이고, 어디서 멈췄는지가 곧 처방입니다.</p>
+  <div class="fig"><svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="매출 진단 네 단계">
+    <text x="0" y="18" font-size="15" font-weight="600">매출이 멈추면 이 순서로 봅니다</text>
+    <g>
+      <rect x="0" y="40" width="600" height="46" rx="12" class="rd" opacity=".85"/><text x="18" y="62" font-size="13.5" font-weight="700" class="w">① 상품을 꾸준히 올리고 있는가</text><text x="18" y="79" font-size="11" class="w" opacity=".9">9월 중순 이후 등록 정체 (아프셨음) → 지금 멈춘 자리</text><text x="584" y="68" font-size="12" text-anchor="end" class="w" font-weight="700">멈춤</text>
+      <rect x="0" y="96" width="600" height="46" rx="12" class="card"/><text x="18" y="118" font-size="13.5" font-weight="700">② 4배수 · 꼬리물기 방식대로 올리고 있는가</text><text x="18" y="135" font-size="11" class="g">등록의 "질" — 양이 돌아온 뒤 확인</text>
+      <rect x="0" y="152" width="600" height="46" rx="12" class="or" opacity=".85"/><text x="18" y="174" font-size="13.5" font-weight="700" class="w">③ 가격 관리가 되고 있는가</text><text x="18" y="191" font-size="11" class="w" opacity=".9">"가격 조정만 약간" — 제대로 못 함 (대표님 답)</text><text x="584" y="180" font-size="12" text-anchor="end" class="w" font-weight="700">부분</text>
+      <rect x="0" y="208" width="600" height="46" rx="12" class="rd" opacity=".85"/><text x="18" y="230" font-size="13.5" font-weight="700" class="w">④ 주말 솎아내기를 하고 있는가</text><text x="18" y="247" font-size="11" class="w" opacity=".9">안 팔리는 위탁 상품 가격 올려 두기 → 4~5주 뒤 삭제 — 안 됨</text><text x="584" y="236" font-size="12" text-anchor="end" class="w" font-weight="700">멈춤</text>
+    </g>
+    <text x="0" y="276" font-size="12" class="b" font-weight="600">①과 ④가 멈춰 있습니다. "시간"의 문제이지 "방법"의 문제가 아닙니다.</text><text x="0" y="294" font-size="12" class="b" font-weight="600">10월 처방 = 등록 2배 + 주말 솎아내기 복구.</text>
+  </svg></div>
+
+  <div class="src"><div class="h">근거</div>
+    <p><b>루크의 원칙</b> — "이 방식에서 매출 관리는 굉장히 단순해요. 첫째 꾸준히 올리고 있느냐, 둘째 4배수랑 꼬리물기 방식대로 되고 있느냐, 셋째 가격 관리가 되고 있느냐, 넷째 주말에 상품 관리를 하고 있느냐. 그것만 하면 꾸준히 우상향하는 구조로 완성돼 있거든요." <i>(통화 ① 45분)</i> · "몸이 안 좋으셨으니까 상품 등록 수랑 솎아내는 작업이 안 돼 있어서 저런 게 아닐까 추측합니다." <i>(같은 통화)</i></p>
+  </div>
+</section>
+
+<!-- ===== 2. TODAY ===== -->
+<section class="lesson" id="today">
+  <div class="lnum">02</div>
+  <div class="kicker">Dashboard · 9/30 15:01</div>
+  <h2>오늘의 스토어 —<br>돌고 있는 것과 멈춘 것</h2>
+  <p class="lead">판매관리 화면 한 장에 대표님 스토어의 지금이 다 있습니다. 문제 칸은 전부 0이고, 돈은 돌고 있습니다.</p>
+
+  <div class="fig"><svg viewBox="0 0 600 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="오늘의 주문 파이프라인과 정산">
+    <text x="0" y="18" font-size="15" font-weight="600">주문 파이프라인 (9/30 15:01)</text>
+    <g>
+      <rect x="0" y="40" width="108" height="78" rx="12" class="card"/><text x="54" y="64" font-size="11" text-anchor="middle" class="g">신규주문</text><text x="54" y="98" font-size="24" text-anchor="middle" font-weight="700">0</text>
+      <polygon points="112,79 124,73 124,85" class="g"/>
+      <rect x="123" y="40" width="108" height="78" rx="12" class="soft"/><text x="177" y="64" font-size="11" text-anchor="middle" class="g">배송준비</text><text x="177" y="98" font-size="24" text-anchor="middle" font-weight="700" class="b">5</text>
+      <polygon points="235,79 247,73 247,85" class="g"/>
+      <rect x="246" y="40" width="108" height="78" rx="12" class="soft"/><text x="300" y="64" font-size="11" text-anchor="middle" class="g">배송중</text><text x="300" y="98" font-size="24" text-anchor="middle" font-weight="700" class="b">13</text>
+      <polygon points="358,79 370,73 370,85" class="g"/>
+      <rect x="369" y="40" width="108" height="78" rx="12" class="soft"/><text x="423" y="64" font-size="11" text-anchor="middle" class="g">배송완료</text><text x="423" y="98" font-size="24" text-anchor="middle" font-weight="700" class="b">36</text>
+      <polygon points="481,79 493,73 493,85" class="g"/>
+      <rect x="492" y="40" width="108" height="78" rx="12" class="gr"/><text x="546" y="64" font-size="11" text-anchor="middle" class="w" opacity=".9">구매확정</text><text x="546" y="98" font-size="24" text-anchor="middle" font-weight="700" class="w">75</text>
+    </g>
+    <text x="0" y="142" font-size="11.5" class="g">배송완료 36건이 구매확정되면 정산이 앞당겨집니다. 구매확정 요청 문자를 보낼 자리.</text>
+    <g>
+      <rect x="0" y="162" width="292" height="70" rx="12" class="card"/><text x="16" y="186" font-size="11.5" class="g">오늘 정산</text><text x="16" y="216" font-size="22" font-weight="700" class="gr">1,679,056원</text>
+      <rect x="308" y="162" width="292" height="70" rx="12" class="card"/><text x="324" y="186" font-size="11.5" class="g">정산 예정</text><text x="324" y="216" font-size="22" font-weight="700" class="b">1,824,335원</text>
+    </g>
+    <g font-size="12">
+      <rect x="0" y="246" width="140" height="60" rx="10" class="card"/><text x="70" y="268" text-anchor="middle" class="g" font-size="11">취소·반품·교환</text><text x="70" y="294" text-anchor="middle" font-weight="700" class="gr">0 · 0 · 0</text>
+      <rect x="152" y="246" width="140" height="60" rx="10" class="card"/><text x="222" y="268" text-anchor="middle" class="g" font-size="11">판매 지연</text><text x="222" y="294" text-anchor="middle" font-weight="700" class="gr">0</text>
+      <rect x="304" y="246" width="140" height="60" rx="10" class="card"/><text x="374" y="268" text-anchor="middle" class="g" font-size="11">판매중 상품</text><text x="374" y="294" text-anchor="middle" font-weight="700">376 <tspan class="g" font-size="10" font-weight="400">품절 0</tspan></text>
+      <rect x="456" y="246" width="144" height="60" rx="10" class="card"/><text x="528" y="268" text-anchor="middle" class="g" font-size="11">새 리뷰</text><text x="528" y="294" text-anchor="middle" font-weight="700" class="b">22</text>
+    </g>
+    <text x="0" y="326" font-size="11.5" class="g">결제대기 2건 — 미입금 주문. 자동 취소되니 신경 쓰지 않아도 됩니다.</text>
+  </svg></div>
+
+  <p>이 화면에서 읽을 것은 둘입니다. 첫째, <b>지연·취소·반품 칸이 전부 0</b> — 대표님이 1회차 이후 만든 습관("주말 낀 주문에는 코멘트를 먼저 보낸다")이 작동하고 있다는 증거입니다. 둘째, <b>판매중 376개</b> — 이 숫자가 10월 말에 700을 넘어야 합니다. 리뷰 22개는 오늘 하루에 붙은 것이 아니라 최근 누적이지만, 리뷰가 붙는 상품이 곧 "도는 상품"이고 사입 후보의 첫 번째 필터입니다.</p>
+</section>
+
+<!-- ===== 3. CALL 1 ===== -->
+<section class="lesson" id="call1">
+  <div class="lnum">03</div>
+  <div class="kicker">Call ① · 15:00 · 49분</div>
+  <h2>백문백답, 마지막 장 —<br>대표님이 스스로에게 준 점수</h2>
+  <p class="lead">1회차에 시작한 100문 100답을 오늘 끝까지 같이 봤습니다. 컨디션이 돌아온 목소리로, 과거의 결정을 처음으로 소리 내어 복기하신 날입니다.</p>
+
+  <div class="tl">
+    <div class="row"><div class="tm">0:00</div><div class="bd"><h4>컨디션</h4><p>"회복 중입니다. 병원 계속 다니고 있는데 괜찮습니다." 목소리가 지난주보다 확실히 나아졌습니다.</p></div></div>
+    <div class="row"><div class="tm">4:00</div><div class="bd"><h4>되고 싶은 모습 · 현재 점수</h4><p>"자기 일을 멋지게 잘하는 사람 — 목표한 것을 달성하면서 유지하는 사람." 현재 점수는 <b>60점</b>. 과락이 아닌 이유: "어려운 순간에도 포기하지 않고 버텨왔다."</p></div></div>
+    <div class="row"><div class="tm">8:30</div><div class="bd"><h4>감점 요인 셋</h4><p>① 신중해야 할 결정을 신중하지 못했다 ② 모든 사안을 너무 쉽게 생각했다 ③ 좋은 결과만 보고 나쁜 상황을 시뮬레이션하지 않았다.</p></div></div>
+    <div class="row"><div class="tm">10:00</div><div class="bd"><h4>과거 투자의 복기</h4><p>처음 결정한 이유는 "그 사람에 대한 믿음". 이후 자금을 계속 넣은 이유는 "조금만 더 하면 궤도에 오르겠다". 돌아간다면 "오너에게 불씨와 의지가 남아 있는지 직접 물었어야 했다." 말리던 상무님의 평가와 본인 평가가 달랐고, 파트너의 술 문제를 간과했다.</p><div class="n">루크: "결국 끌고 나가는 오너가 불씨가 있는지, 방향이 있는지 확인했어야 했다는 말씀이시죠. 저도 어제 동업자와 똑같은 얘기를 했습니다."</div></div></div>
+    <div class="row"><div class="tm">21:00</div><div class="bd"><h4>외식업을 안 한 것</h4><p>2~3년 전 쌀국수집을 진지하게 알아봤다가 못 했고, 지금 보면 안 한 게 나았다. 루크: 오프라인은 삐걱거리면 접는 것 자체가 큰 비용 — 1년 반째 집기도 못 빼는 카페를 봤다. 온라인은 자본이 작고 접기도 쉽다.</p></div></div>
+    <div class="row"><div class="tm">24:00</div><div class="bd"><h4>48번 · 돈과 시간과 건강을 빼면</h4><p>"가족들, 정말 좋아하는 사람들과 보내는 시간." 루크: "돈을 버는 이유도 그 시간을 갖기 위해서죠."</p></div></div>
+    <div class="row"><div class="tm">25:00</div><div class="bd"><h4>49번 · 결정을 미루는 이유 = 책임지지 못할 것 같은 심정</h4><p>"주문이 들어왔는데 보내지 못하는 상황이 괴롭습니다. 그 사람은 나를 믿고 주문했는데." 어떻게든 보낼 방법을 찾다가 시간이 가고, 결국 빠른 거절·통보를 못 한다. 오늘도 어제 주문 건을 찾다 찾다 지연 처리 후 취소.</p><div class="n">루크: "시간 관리와 맞물리는 부분입니다. 습관으로 만들어 가시면 됩니다." → 다음 주 할 일 ⑦</div></div></div>
+    <div class="row"><div class="tm">29:00</div><div class="bd"><h4>막힐 때 하는 행동</h4><p>"요새는 AI한테, 그리고 스승님·강사님한테 물어봅니다." 루크: "패닉에 빠지지 않는 것이 첫 번째인데 그 패턴이 없으시니 충분히 잘하고 계신 겁니다."</p></div></div>
+    <div class="row"><div class="tm">31:00</div><div class="bd"><h4>실패의 정의 · 쿠쿠 제습기 6대</h4><p>첫 달, 주말이 낀 주문을 고객이 취소했는데 쿠쿠가 발송해 버려 반송비 6만 원이 걸린 사건. 직접 청량리까지 가서 회수, 보상금 2만 받고 4만 원은 "학습비". 교훈: <b>주말이 낀 주문에는 무조건 코멘트를 먼저 보낸다.</b> 그 뒤로 미스커뮤니케이션이 거의 사라졌다.</p><div class="n">루크: "지금 단계에서 딱 맞는 선택입니다. 카톡·문자로 발송/지연 알림을 보내는 방법을 제가 찾아보겠습니다."</div></div></div>
+    <div class="row"><div class="tm">39:00</div><div class="bd"><h4>사업이 커지는 것의 두려움 = 사람 관리</h4><p>"내 맘 같지 않기 때문에. 그리고 요즘은 고소·고발도 많아서." 기준: <b>월 1,000만 원을 6개월 유지하면 와이프 합류</b>를 이야기해 봤다. 와이프가 안 하면 어쩔 수 없이 사람을 쓴다 — "사업이 더 커지려면 혼자서는 절대 못 하니까."</p></div></div>
+    <div class="row"><div class="tm">42:00</div><div class="bd"><h4>스토어 통계 리뷰</h4><p>위 성적표 섹션의 코멘트들. 4회차 자료를 잔디로 전달하고 5분 휴식.</p></div></div>
+  </div>
+
+  <div class="fig"><svg viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="과거 결정의 세 가지 감점과 오늘의 규칙">
+    <text x="0" y="18" font-size="15" font-weight="600">과거의 감점 셋 → 오늘 표로 바꾼 것</text>
+    <g>
+      <rect x="0" y="40" width="188" height="180" rx="14" class="card"/><text x="94" y="66" font-size="12.5" text-anchor="middle" font-weight="700" class="rd">신중하지 못했다</text><text x="94" y="92" font-size="11.5" text-anchor="middle" class="g">"그 사람에 대한 믿음"</text><text x="94" y="110" font-size="11.5" text-anchor="middle" class="g">으로 결정</text><line x1="30" y1="128" x2="158" y2="128" class="ln"/><text x="94" y="154" font-size="12" text-anchor="middle" font-weight="600" class="b">사입 두 줄 필터</text><text x="94" y="174" font-size="11" text-anchor="middle" class="g">리뷰 10개↑ · 자본 10%↓</text><text x="94" y="200" font-size="10.5" text-anchor="middle" class="g">감이 아니라 표가 결정</text>
+      <rect x="206" y="40" width="188" height="180" rx="14" class="card"/><text x="300" y="66" font-size="12.5" text-anchor="middle" font-weight="700" class="rd">너무 쉽게 생각했다</text><text x="300" y="92" font-size="11.5" text-anchor="middle" class="g">"조금만 더 하면"</text><text x="300" y="110" font-size="11.5" text-anchor="middle" class="g">추가 자금 반복</text><line x1="236" y1="128" x2="364" y2="128" class="ln"/><text x="300" y="154" font-size="12" text-anchor="middle" font-weight="600" class="b">손절 규칙표</text><text x="300" y="174" font-size="11" text-anchor="middle" class="g">3주 인하 · 4주 덤핑 · 3개월 상한</text><text x="300" y="200" font-size="10.5" text-anchor="middle" class="g">미리 정한 선이 결정</text>
+      <rect x="412" y="40" width="188" height="180" rx="14" class="card"/><text x="506" y="66" font-size="12.5" text-anchor="middle" font-weight="700" class="rd">나쁜 경우를 안 그렸다</text><text x="506" y="92" font-size="11.5" text-anchor="middle" class="g">좋은 결과만 보고</text><text x="506" y="110" font-size="11.5" text-anchor="middle" class="g">시뮬레이션 없음</text><line x1="442" y1="128" x2="570" y2="128" class="ln"/><text x="506" y="154" font-size="12" text-anchor="middle" font-weight="600" class="b">현금흐름 달력</text><text x="506" y="174" font-size="11" text-anchor="middle" class="g">위험 주간을 미리 표시</text><text x="506" y="200" font-size="10.5" text-anchor="middle" class="g">나쁜 주를 먼저 그림</text>
+    </g>
+    <text x="300" y="242" font-size="12" text-anchor="middle" class="g">3·4회차의 표 세 장은 대표님이 꼽은 감점 셋에 대응합니다.</text>
+  </svg></div>
+
+  <div class="src"><div class="h">근거</div>
+    <p><b>대표님의 말</b> — "과정이 좋지 않은데 좋은 결과가 있을 수는 없다." · "실패라고 단정할 수는 없지만, 생각과 다르게 나온 것을 좋은 경험으로 받아들이려 한다." <i>(통화 ①)</i></p>
+    <p><b>참고</b> — 골비처(Gollwitzer, 1999)의 <i>실행 의도</i>: "언제·어디서·어떻게"가 정해진 계획이 결심보다 실행률을 크게 높입니다. 대표님이 "규칙을 정해 두면 빨리 결정할 수 있겠다"고 하신 것이 정확히 이 원리입니다.</p>
+  </div>
+</section>
+
+<!-- ===== 4. CALL 2 ===== -->
+<section class="lesson" id="call2">
+  <div class="lnum">04</div>
+  <div class="kicker">Call ② · 15:58 · 73분</div>
+  <h2>운영의 문제 셋 —<br>판매 방해, 사입 재고, 위탁 비율</h2>
+  <p class="lead">대표님이 먼저 꺼낸 문제는 둘이었습니다. "판매 못 하게 하는 사람들이 신경 쓰인다"와 "상품 등록이 느리다". 거기에 위탁·사입 병행 질문이 붙었습니다.</p>
+
+  <h3>① 판매 방해 업체 — 내리고, 칭찬하고, 제안한다</h3>
+  <p>이번 주 대표님 대응(하나는 복사해 새로 등록, 하나는 그냥 둠)은 적절했습니다. 다음부터는 한 단계 더 갑니다. <b>먼저 내려주는 액션을 취하고, 그 자리에서 협업을 제안합니다.</b> "제품이 너무 훌륭해서 더 팔아드리고 싶다. 3개월 만에 매출 1억이 났고, 네이버 셀러 수백 명을 알고 있다." 상대가 화를 내며 연락한다는 것은 그 회사가 지금 매출이 무서울 만큼 어렵다는 뜻입니다. 위로하듯 대하면 됩니다.</p>
+  <div class="fig"><svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="판매 방해 대응 흐름">
+    <text x="0" y="18" font-size="15" font-weight="600">"판매 내려라" 연락이 오면</text>
+    <rect x="0" y="44" width="130" height="80" rx="12" class="rd" opacity=".85"/><text x="65" y="76" font-size="13" text-anchor="middle" class="w" font-weight="700">연락 옴</text><text x="65" y="96" font-size="10.5" text-anchor="middle" class="w" opacity=".9">톡톡·QnA·메일</text><text x="65" y="112" font-size="10.5" text-anchor="middle" class="w" opacity=".9">= 그쪽이 어렵다는 신호</text>
+    <polygon points="136,84 150,77 150,91" class="b"/>
+    <rect x="156" y="44" width="130" height="80" rx="12" class="card"/><text x="221" y="76" font-size="13" text-anchor="middle" font-weight="700">1. 내린다</text><text x="221" y="96" font-size="10.5" text-anchor="middle" class="g">요구대로 먼저 액션</text><text x="221" y="112" font-size="10.5" text-anchor="middle" class="g">캡처는 남김</text>
+    <polygon points="292,84 306,77 306,91" class="b"/>
+    <rect x="312" y="44" width="130" height="80" rx="12" class="soft"/><text x="377" y="70" font-size="13" text-anchor="middle" font-weight="700" class="b">2. 칭찬 + 제안</text><text x="377" y="90" font-size="10.5" text-anchor="middle" class="g">"제품이 훌륭해서</text><text x="377" y="104" font-size="10.5" text-anchor="middle" class="g">더 팔아드리고 싶다"</text><text x="377" y="118" font-size="10.5" text-anchor="middle" class="g">3개월 1억 · 셀러 수백 명</text>
+    <polygon points="448,70 462,63 462,77" class="gr"/><polygon points="448,100 462,93 462,107" class="g"/>
+    <rect x="468" y="40" width="132" height="38" rx="10" class="gr"/><text x="534" y="64" font-size="11.5" text-anchor="middle" class="w" font-weight="700">협업 · 도매 제안 옴</text>
+    <rect x="468" y="88" width="132" height="38" rx="10" class="card"/><text x="534" y="112" font-size="11.5" text-anchor="middle" font-weight="600">정중한 거절 → 끝</text>
+    <text x="0" y="160" font-size="12" class="g">콜드메일은 안 보냅니다. 상대가 먼저 연락한 순간이 담당자와 말할 기회입니다.</text>
+    <text x="0" y="182" font-size="12" class="g">구매 제한에 막혔을 때만 먼저 문의. "살아남는 애도 있고 포기할 애도 있다."</text>
+    <text x="0" y="216" font-size="12.5" class="b" font-weight="600">단순하게: 안 되면 내리고, 되면 계속 판다. 아이템은 흐름 속에서 나를 지나가는 것.</text>
+    <text x="0" y="238" font-size="11.5" class="g">루크의 캐치티니핑: 이마트 → 본사몰 300개 → 제한 → 또 300개. "보내주면 인연, 아니면 여기까지."</text>
+  </svg></div>
+
+  <h3>② 사입 재고 — 덩어리로 본다, 3개월을 넘기지 않는다 <span class="pill new">4회차 추가</span></h3>
+  <p>3회차 손절 규칙표(3주 인하 · 4주 덤핑)에 오늘 두 가지가 더 붙었습니다. 첫째, <b>어떤 사입 품목도 3개월을 넘기지 않는다.</b> 3개월 넘게 안 팔렸다는 것은 시즌을 놓쳤다는 뜻이고, 그 돈은 공간과 자금을 동시에 묶습니다. 둘째, <b>사입은 낱개가 아니라 덩어리로 계산한다.</b> 100개 사입해서 개당 5,000원이면 "50만 원짜리 덩어리"입니다. 50개 팔았는데 가격이 떨어지기 시작하면(경쟁이 붙는다는 뜻) 나머지를 싸게 털어 35만 원에 끝냅니다. 덩어리로 보면 손절이 손해가 아니라 "덩어리 수익 35만 확정"이 됩니다.</p>
+  <div class="fig"><svg viewBox="0 0 600 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="사입 덩어리 계산">
+    <text x="0" y="18" font-size="15" font-weight="600">100개 사입 · 개당 마진 5,000원 = 50만 원짜리 덩어리</text>
+    <text x="0" y="52" font-size="12" class="g" font-weight="600">낱개로 보면</text>
+    <rect x="0" y="60" width="290" height="30" rx="6" class="b"/><text x="145" y="80" font-size="11.5" text-anchor="middle" class="w" font-weight="600">50개 판매 · +25만</text>
+    <rect x="0" y="96" width="290" height="30" rx="6" class="rd" opacity=".8"/><text x="145" y="116" font-size="11.5" text-anchor="middle" class="w" font-weight="600">가격 하락 → "손해 보고 팔 순 없지" → 재고 50개 방치</text>
+    <text x="0" y="150" font-size="12.5" class="rd" font-weight="600">→ 25만 + 묶인 돈 + 창고 + 시즌 종료 = 결국 0원 재고</text>
+    <text x="310" y="52" font-size="12" class="b" font-weight="600">덩어리로 보면</text>
+    <rect x="310" y="60" width="290" height="30" rx="6" class="b"/><text x="455" y="80" font-size="11.5" text-anchor="middle" class="w" font-weight="600">50개 판매 · +25만</text>
+    <rect x="310" y="96" width="290" height="30" rx="6" class="gr"/><text x="455" y="116" font-size="11.5" text-anchor="middle" class="w" font-weight="600">가격 하락 감지 → 50개 싸게 털기 · +10만</text>
+    <text x="310" y="150" font-size="12.5" class="gr" font-weight="600">→ 덩어리 수익 35만 확정 · 자금 전액 회수 → 다음 상품</text>
+    <line x1="0" y1="172" x2="600" y2="172" class="ln"/>
+    <text x="0" y="198" font-size="12" class="g">가격 하락이 빨라진다 = 경쟁자가 붙고 있다 = 빨리 털수록 유리하다.</text>
+    <text x="0" y="218" font-size="12" class="g">물티슈 파레트: 수익 → 하락 조짐 → 전량 정리 → "가진 게 없으니 손해도 없다".</text>
+    <text x="0" y="252" font-size="12.5" class="b" font-weight="600">규칙: 사입은 아무리 길어도 3개월. 안 되면 빨리 쳐낸다. 회전 = 잘 팔리는 스토어.</text>
+  </svg></div>
+  <div class="card"><h4>필립스 커피머신 3대 (279,000원 사입 · G마켓 34.5만)</h4>
+    <p style="margin:0;font-size:15px">이미 높은 가격에 1대가 팔렸습니다. 지금 최저가 두 명은 역마진 위탁으로 보이니, <b>와이프 아이디로 "구매 가능한가요?" 문의</b>를 넣어 보세요. 없어지면 대표님이 최저가가 됩니다. 안 팔리면 2~3일마다 조금씩 내려 "공급과 수요가 만나는 지점"을 찾습니다. 3대만 팔고 적정선으로 내려오면 됩니다. AS는 정품 시리얼이 있으면 문제 없고, 거부하면 대표님이 주문자로서 소비자보호원에 신고하면 됩니다 — 한 번도 문제 된 적 없습니다.</p></div>
+
+  <h3>③ 위탁 vs 사입 — 비율은 의미 없다, 병행한다</h3>
+  <p>지금 위탁 비율이 훨씬 높은 것은 문제가 아닙니다. 가장 유리한 방식을 택하되, <b>사입은 더 세심하게(위 규칙), 위탁은 안 팔리면 가격 올려 두고 4~5주 뒤 삭제</b>. 공급사가 주문자 정보 불일치에 예민하게 구는 것은 플랫폼 문제가 아니라 그 회사가 한가하다는(주문이 없다는) 신호입니다. 하루 300건 처리하는 회사는 그런 걸 비교할 시간이 없습니다. GS샵·롯데온·무신사·에이블리처럼 원활한 곳은 그대로 쓰면 됩니다.</p>
+
+  <div class="fig"><svg viewBox="0 0 600 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="파도타기 — 흐름을 타는 사업">
+    <text x="0" y="18" font-size="15" font-weight="600">사업은 파도타기 — 흐름을 만들 수는 없고, 탈 수만 있다</text>
+    <path d="M0,150 C60,110 100,110 150,140 C200,170 240,170 290,130 C340,90 380,90 430,125 C480,160 520,160 600,110" fill="none" class="bl" stroke-width="2.5"/>
+    <circle cx="290" cy="130" r="7" class="b"/><text x="290" y="112" font-size="11.5" text-anchor="middle" class="b" font-weight="600">흐름을 탄다</text>
+    <g font-size="11.5" class="g">
+      <text x="0" y="60">샤넬 800만 → 리셀 1,000만 → 3달 뒤 1,200만</text>
+      <text x="0" y="78">나이키, 리셀 사이트 소송 → 패소 (3년 매출 부진의 방어적 태도)</text>
+      <text x="0" y="96">구매대행 소송 → 대리점 전부 패소 · 삼성도 카메라 사업부를 접음</text>
+    </g>
+    <text x="0" y="196" font-size="12" class="g">무풍일 땐 광고로도 유행을 못 만든다. 중급 마케터의 착각 · PD들이 파일럿을 만드는 이유.</text>
+    <text x="0" y="218" font-size="12.5" class="b" font-weight="600">막는 공급사는 흐름을 잡으려는 쪽, 대표님은 타는 쪽. 그래서 지지 않습니다.</text>
+  </svg></div>
+
+  <h3>④ 돈의 규칙 — 주차별 정산, 회전, 수수료 <span class="pill new">4회차 추가</span></h3>
+  <div class="lg">
+    <div><b>주차별 정산</b>매주 "이번 주 남은 돈이 지난주보다 늘었나 줄었나"만 봅니다. 늘고 있으면 그 페이스, 정체면 등록 수·등록 질 둘 중 하나를 바꿉니다.<span>월말에는 나간 비용 정산 한 번.</span></div>
+    <div><b>할부 전환</b>자금이 안 돌면 이자를 내더라도 카드 안에서 할부로 돌립니다. 수익이 줄어도 카드가 안 막히는 것이 먼저.<span>카드 결제 요일 정리도 함께.</span></div>
+    <div><b>회전 > 마진율</b>"백화점에서 이길 수 없는 1대장은 떡볶이" — 단가는 낮지만 회전을 못 따라감. 부루마블에서 돈이 없을 때는 출발지를 자주 도는 것.<span>작게 자주 싸우는 법을 먼저 익힘.</span></div>
+    <div><b>빠른 정산 · 수수료</b>개설 7/30 → 10월에 메뉴가 뜨는지 확인(월 단위 심사). 수수료 6.7%는 신규 최고 등급, 내년 1월 부가세 신고 뒤 2~3월부터 1~2% 인하.<span>다른 플랫폼은 10%↑.</span></div>
+  </div>
+
+  <h3>⑤ 10월의 목표 — 두 배</h3>
+  <div class="quote">"10월에는 대표님 지금 가지고 계신 매출이 두 배가 될 수 있도록."<span class="who">— 루크 · 대표님: "상품 등록 수를 최소 두 배는 늘려야 하지 않나"</span></div>
+  <div class="quote">"5천만 원대 매출이면 캐릭터 레벨 50이 오른 겁니다. 같은 상품을 같은 시간에 신규 스토어와 같이 올리면 대표님이 무조건 위에 뜹니다. 안 팔려서 고여 썩는 애들은 없어지고 새 피가 수혈된다고 받아들이시면 됩니다."<span class="who">— 루크 · 통화 ② 59분</span></div>
+  <div class="fig"><svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="10월 목표 두 배">
+    <text x="0" y="18" font-size="15" font-weight="600">10월 목표 — 손잡이는 둘</text>
+    <g>
+      <rect x="0" y="44" width="290" height="130" rx="14" class="card"/><text x="20" y="72" font-size="12" class="g" font-weight="600">상품 등록</text><text x="20" y="108" font-size="26" font-weight="700">376 <tspan class="g" font-size="14" font-weight="400">→</tspan> <tspan class="b">750+</tspan></text><text x="20" y="134" font-size="11.5" class="g">하루 13개 × 30일 · 타이머 켜고 · 100일 챌린지</text><text x="20" y="156" font-size="11.5" class="g">"몰아서 500"이 아니라 "매일 13"</text>
+      <rect x="310" y="44" width="290" height="130" rx="14" class="soft"/><text x="330" y="72" font-size="12" class="b" font-weight="600">월 결제금액</text><text x="330" y="108" font-size="26" font-weight="700">5,600만 <tspan class="g" font-size="14" font-weight="400">→</tspan> <tspan class="b">1억</tspan></text><text x="330" y="134" font-size="11.5" class="g">등록 2배 + 주말 솎아내기 복구 + 객단가 회복</text><text x="330" y="156" font-size="11.5" class="g">주차별 정산으로 매주 확인</text>
+    </g>
+    <text x="0" y="196" font-size="11.5" class="g">9월 5,600만은 대표님 추정(그래프 기준 6천만 안팎). 첫 주차 정산에서 기준선 확정.</text>
+  </svg></div>
+
+  <div class="src"><div class="h">근거</div>
+    <p><b>루크의 원칙</b> — "사입 품목은 덩어리로 봐야 됩니다. 낱개로 손해·수익을 계산하니까 손절을 못 하는 겁니다." · "돈은 싸게 가져와서 비싸게 판다는 가장 간단한 규칙을 최대한 자주, 잘 흘러가게만 하면 됩니다. 멈춰 있는 상품은 그 원칙에서 어긋나 있어서 멈춘 돈입니다. 얼어 있는 걸 깨서 흘려보내면 다른 상품으로 기회를 만듭니다." · "돈을 잃는 순간에도 신중해야 하고, 돈을 버는 순간에도 신중해야 한다." <i>(통화 ②)</i></p>
+    <p><b>참고</b> — 게리 바이너척(Gary Vaynerchuk)의 원칙: 고객 한 명을 소문이 날 만큼 케어하면 사업에 다른 변곡점이 생긴다. 빚이 있다면 자신은 무조건 리셀로 시작해 자본을 만들겠다고 말한 사람. 대표님이 "누군가 좋아할 것을 몰래 준비해 주는 만족감"을 말씀하신 것과 같은 결입니다. 그것이 67번의 답이 될 수 있습니다.</p>
+  </div>
+</section>
+
+<!-- ===== 5. LESSONS DIGEST ===== -->
+<section class="lesson" id="lessons">
+  <div class="lnum">05</div>
+  <div class="kicker">Lessons · 4회차 교육자료 요점</div>
+  <h2>4회차 교육자료,<br>오늘 이야기로 다시 정리</h2>
+  <p class="lead">교육자료 원문(레슨 0~8, 인포그래픽 22개)은 그대로 있습니다. 여기는 각 레슨을 오늘 통화와 연결해 한 줄로 줄인 것입니다.</p>
+  <a class="btn" href="../lesson/">4회차 교육자료 원문 열기</a>
+
+  <div class="tbl"><table>
+    <tr><th>레슨</th><th>한 줄 요점</th><th>오늘 통화에서</th></tr>
+    <tr><td><b>0 점검</b></td><td>안 된 것 옆에 "왜" 한 단어. 몰아서 500 ≠ 매일 500</td><td>등록·솎아내기 안 됨 = "발주에 밀려서 + 아파서". 10월 매일 13개</td></tr>
+    <tr><td><b>1 9월 결산</b></td><td>매출 말고 남은 돈 한 줄</td><td>9월 약 5,600만 매출 확인. 남은 돈은 첫 주차 정산에서 <span class="pill">숙제</span></td></tr>
+    <tr><td><b>2 현금흐름 달력</b></td><td>빨간 칸 앞 7일에 초록 칸 몇 개</td><td>할부 전환·카드 요일 정리 재확인. 빠른 정산 10월 메뉴 확인</td></tr>
+    <tr><td><b>3 회전</b></td><td>마진율이 아니라 며칠에 도는가</td><td>떡볶이·부루마블. 사입 두 줄 필터(리뷰 10↑·자본 10%↓)</td></tr>
+    <tr><td><b>4 손절 규칙표</b></td><td>3주 인하 · 4주 덤핑 · 회수 자금 재배치</td><td><span class="pill new">추가</span> 3개월 상한 · 덩어리 계산 · 위탁은 가격 올려 4~5주 후 삭제 · 재고 시트(루크 제작)</td></tr>
+    <tr><td><b>5 기록 읽기</b></td><td>휴식 &lt;15% · 멍때림 ≥6 · 시간당 건수</td><td>"상품 등록이 느리다" → 타이머로 블록 재기. 결제 처리 중 끊기 최소화</td></tr>
+    <tr><td><b>6 방화벽</b></td><td>위협은 절차로: 캡처 → 표준 답변 → 24시간 → 자문</td><td><span class="pill new">추가</span> 판매 방해 = 내리고 칭찬하고 제안. 법무법인 메일 무시로 종결(대표님 경험 일치)</td></tr>
+    <tr><td><b>7 객단가</b></td><td>미끼+마진 · 묶음 · 업셀</td><td>그래프에서 "객단가 낮아짐" 확인 → 10월 세팅 대상</td></tr>
+    <tr><td><b>8 67번</b></td><td>사는 이유의 계단: 최저가 → 검수 → 고지 → 응대 → 이름</td><td>"좋아하는 사람에게 몰래 준비해 주는 만족감" · 게리 바이너척 일화</td></tr>
+  </table></div>
+
+  <h3>오늘 새로 들어온 원칙 다섯</h3>
+  <div class="sum">
+    <div><div class="n">01</div><div class="t">사입은 덩어리로 계산하고 3개월을 넘기지 않는다</div></div>
+    <div><div class="n">02</div><div class="t">판매 방해 연락 = 그쪽이 어렵다는 신호. 내리고, 칭찬하고, 제안한다</div></div>
+    <div><div class="n">03</div><div class="t">콜드메일은 안 보낸다. 막혔을 때만 문의한다</div></div>
+    <div><div class="n">04</div><div class="t">주차별 정산 — 지난주보다 늘었나 줄었나만 본다</div></div>
+    <div style="grid-column:1/-1"><div class="n">05</div><div class="t">사업은 파도타기. 흐름은 만들 수 없고 탈 수만 있다 — 막는 쪽이 아니라 타는 쪽에 선다</div></div>
+  </div>
+</section>
+
+<!-- ===== 6. NEXT WEEK ===== -->
+<section class="lesson" id="next">
+  <div class="lnum">06</div>
+  <div class="kicker">Next 7 days · 10/1 (목) → 10/7 (수)</div>
+  <h2>다음 주에 할 일</h2>
+  <p class="lead">10월은 내일부터입니다. 열 가지를 정했고, 요일에 박아 두었습니다. 다 못 해도 됩니다 — 안 된 것 옆에 "왜" 한 단어만 남겨 주세요.</p>
+
+  <ul class="chk">
+    <li>매일 상품 13개 등록 — 타이머 켜고 <span class="d">등록 블록은 60분 이하. 100일 챌린지 공지 나오면 참여. 10월 목표 376 → 750+</span></li>
+    <li>주말 솎아내기 복구 (10/4 토 · 10/5 일) <span class="d">위탁: 안 팔리는 상품 가격 올려 두기(4~5주 뒤 삭제). 사입: 손해 봐도 정리 대상 표시</span></li>
+    <li>사입 재고 시트 채우기 <span class="d">루크가 시트 공유 → 입고일 · 보유 상한(3개월) · 묶인 돈 · 덩어리 목표 수익. 14품목 + 필립스 3대</span></li>
+    <li>필립스 커피머신 — 경쟁자 구매 문의 + 가격 조정 <span class="d">와이프 아이디로 최저가 2곳에 "구매 가능한가요?" · 안 팔리면 2~3일마다 소폭 인하</span></li>
+    <li>빠른 정산 메뉴 확인 (10/1) <span class="d">개설 7/30 · 월 단위 심사. 메뉴가 뜨면 즉시 신청</span></li>
+    <li>판매 방해 연락 오면 — 내리고 · 칭찬 · 협업 제안 <span class="d">"제품이 훌륭해서 더 팔아드리고 싶다. 3개월 1억, 셀러 수백 명 네트워크." 캡처는 남김</span></li>
+    <li>빠른 거절·통보 규칙 정하기 <span class="d">보낼 방법 찾기는 2시간까지. 안 되면 바로 지연 처리 + 고객 안내. 주말 낀 주문은 코멘트 먼저(지금 하시는 대로)</span></li>
+    <li>첫 주차 정산 (10/5 일 밤 15분) <span class="d">이번 주 남은 돈 한 줄. 이것이 10월의 기준선</span></li>
+    <li>카드 결제 요일 정리 · 필요하면 할부 전환 <span class="d">10월 현금흐름 달력에 빨간 칸 확정</span></li>
+    <li>객단가 세팅 1개 <span class="d">가장 잘 도는 상품 하나에 묶음 옵션(2·3개) 추가 — 그래프에서 객단가 하락이 보였음</span></li>
+  </ul>
+
+  <div class="wk">
+    <div><b>10/1 목</b>빠른 정산 메뉴 확인<br>등록 13<br>재고 시트 받기</div>
+    <div><b>10/2 금</b>등록 13<br>필립스 구매 문의<br>카드 요일 정리</div>
+    <div class="we"><b>10/3 토</b>등록 13<br>솎아내기 ①<br>(가격 올릴 것 표시)</div>
+    <div class="we"><b>10/4 일</b>솎아내기 ②<br>주차 정산 15분<br>남은 돈 한 줄</div>
+    <div><b>10/5 월</b>등록 13<br>재고 시트 채우기<br>객단가 묶음 1개</div>
+    <div><b>10/6 화</b>등록 13<br>필립스 가격 점검</div>
+    <div><b>10/7 수</b>등록 13<br>5회차 통화 전<br>점검표 "왜"</div>
+  </div>
+
+  <h3>루크가 할 것</h3>
+  <ul class="chk">
+    <li>사입 재고 관리 스프레드시트 제작·공유 <span class="d">입고일 · 3개월 상한일 · 묶인 돈 · 덩어리 목표 · 판정</span></li>
+    <li>발송·지연·취소 카톡/문자 자동 알림 방법 조사 <span class="d">톡톡 외 채널. 가능하면 템플릿 3종 초안</span></li>
+    <li>100일 상품 등록 챌린지 공지 <span class="d">오늘 나감</span></li>
+    <li>상품 등록 속도 개선안 고민 <span class="d">"클릭만 확인" 수준으로 줄일 수 있는 부분</span></li>
+    <li>5회차 자료 준비 <span class="d">이 페이지의 점검표 10개를 첫 블록으로</span></li>
+  </ul>
+
+  <div class="dark"><div class="k">10월의 문장</div><p style="margin:0;font-size:17px;font-weight:600">"안 팔려서 고여 썩는 애들은 없어지고, 새 피가 수혈된다."</p><p style="margin:8px 0 0;font-size:14px;color:#a1a1a6">등록은 수혈이고 솎아내기는 배출입니다. 둘 다 매주 돌아야 합니다.</p></div>
+
+  <div class="quote">"선생님이 해주시는 교육이 제가 볼 때는 자기 경영 수업 같아요. 예전부터 책도 보고 강의도 들었는데 실천이 안 돼서 쳇바퀴였는데, 오늘 올려주신 글 보면서 반성도 하고 이렇게 해야겠구나 생각이 많이 들었습니다."<span class="who">— 대표님 · 통화 ② 56분</span></div>
+  <p>잘하고 계십니다. 기본기가 아니라 요령만 는다고 하셨지만, 첫 달 반송비 4만 원에서 배운 "주말 코멘트"가 지금 취소 0건을 만들고 있습니다. 그것이 기본기입니다.</p>
+</section>
+
+<!-- ===== REFERENCES ===== -->
+<section class="lesson" id="ref" style="margin-bottom:24px">
+  <div class="kicker">References</div>
+  <h2>출처</h2>
+  <ul class="ref" style="font-size:13.5px;color:var(--gray);line-height:1.7">
+    <li>박태경 대표 4회차 통화 ① (2026-09-30 15:00, 49분) · 통화 ② (15:58, 73분) — 플라우드 녹음</li>
+    <li>스마트스토어 판매관리 화면 (2026-09-30 15:01) · 판매성과 통계 2026-07-01~09-29 (91일) · 일별 결제 표 9/13~9/29</li>
+    <li>9/15 · 9/16 결제금액은 표에서 가려져 "결제당 결제금액 × 결제자수"로 역산 (723,750 · 2,678,868)</li>
+    <li>8월 3,600만 · 9월 5,600만은 통화 ②에서 대표님이 말한 추정치. 그래프 기준으로는 9월 6천만 안팎</li>
+    <li>4회차 교육자료 (s04/lesson) · 3회차 교육자료 (s03/lesson)</li>
+    <li>Gollwitzer, P. M. (1999). Implementation intentions. <i>American Psychologist</i>, 54(7). · Vaynerchuk, G. — 강연·저서에서 인용한 일화</li>
+  </ul>
+  <div class="sig"><b>멘토루크 유믿음</b>원크루 · 4회차 정리 · 2026년 9월 30일</div>
+</section>
+
+</div></main>
+<footer>박태경 대표 1인을 위한 비공개 세션 자료입니다. 무단 공유를 삼가 주십시오.</footer>
+</body>
+</html>
