@@ -28,6 +28,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",-
 .kpi div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px 14px}
 .kpi .v{font-size:22px;font-weight:700;letter-spacing:-.02em;color:#fff;line-height:1.2}
 .kpi .l{font-size:12px;color:#a1a1a6;margin-top:4px}
+.kpi>div .v,.kpi>div .l{background:none;border:0;padding:0;border-radius:0}
 nav.toc{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 22px;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}
 nav.toc a{display:inline-block;font-size:13px;color:var(--gray);text-decoration:none;padding:6px 12px;border-radius:999px;margin-right:4px;background:var(--card)}
 nav.toc a b{color:var(--blue);font-weight:600;margin-right:4px}
@@ -72,7 +73,7 @@ svg .sg{stroke:var(--gray)}svg .sgr{stroke:var(--green)}svg .sor{stroke:var(--or
 footer{border-top:1px solid var(--line);padding:24px 22px 44px;font-size:12px;color:var(--gray);text-align:center}
 .sig{margin-top:32px}.sig b{display:block;font-size:17px}
 .sum{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
-.sum div{background:var(--card);border-radius:14px;padding:14px}
+.sum>div{background:var(--card);border-radius:14px;padding:14px}
 .sum .n{font-size:13px;color:var(--blue);font-weight:600;letter-spacing:.05em}
 .sum .t{font-size:14px;margin-top:4px;font-weight:500}
 .chk{list-style:none;padding:0;margin:12px 0}
